@@ -1,0 +1,547 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "Pret",
+		"selected_items":
+		[
+			[
+				"Pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"colo",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"control",
+				"Package Control: Enable Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"npm install -g jshint",
+			"install",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/alexbrown.xyz"
+	],
+	"file_history":
+	[
+		"/C/nodeStuff/github-to-s3-deploy/deploy.env",
+		"/C/nodeStuff/github-to-s3-deploy/index.js",
+		"/C/nodeStuff/github-to-s3-deploy/.env",
+		"/C/nodeStuff/github-to-s3-deploy/package.json",
+		"/C/Users/Alex/Downloads/category-data.json",
+		"/C/Users/Alex/Downloads/bxslider-4-master (1)/bxslider-4-master/src/js/jquery.bxslider.js",
+		"/C/Users/Alex/Downloads/product-images.json",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/User/Pretty JSON.sublime-settings",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/Website Dreamweaver Amora/myamora.com/public_html/parallax/sftp-config.json",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/DevAnB/StoreLocator/haversine.old.php",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/DevAnB/StoreLocator/address-handler.php",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/Website Dreamweaver Amora/myamora.com/public_html/parallax/index.html",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/NetBeansProjects/RetailImports/build/classes/config.properties",
+		"/U/Documents/Web Team/Trade Newsletters/2015 Vine Tomato/vine-tomato.html",
+		"//ashleigh.local/datastore/FolderRedirections/alexbrown/Desktop/MSDS.js",
+		"/C/Users/Alex/fragrance/www/index.html",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/Alex/myApp/www/index.html",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/NetBeansProjects/RetailImports/config.properties",
+		"//ASHBURFILE/FolderRedirections/AlexBrown/My Documents/NetBeansProjects/RetailImports/resources/config.properties",
+		"/V/@Graphics_Works_in_Progress/Philippa/A&B/Fragrance Wheel/archive/v03/fragrance-wheel.js",
+		"/U/Documents/Web Team/Trade Newsletters/2013 March/AB-Newsletter-2013-March.html",
+		"/U/Documents/Web Team/Trade Newsletters/2015 Heart Pomanders/tsh-heart-pomander-announcement.html",
+		"/R/A&B_Products/Ultrasonics/amora/WebSite/coming-soon/index.html",
+		"/C/Windows/SysWOW64/dymourl.ini",
+		"/C/Windows/System32/DriverStore/FileRepository/dymo.inf_amd64_neutral_93354e907ae8c705/dymo.PNF",
+		"/C/Windows/System32/DriverStore/FileRepository/dymo.inf_amd64_neutral_95a3f0d89c390314/dymo.inf",
+		"/C/Windows/System32/DriverStore/FileRepository/dymo.inf_amd64_neutral_95a3f0d89c390314/dymo.PNF",
+		"/C/Windows/System32/DriverStore/FileRepository/dymo.inf_amd64_neutral_bec84d46d9efa2be/dymo.PNF",
+		"/C/Program Files (x86)/DYMO Label/Drivers/DYMOCFG.DLL",
+		"/C/Program Files (x86)/DYMO Label/Drivers/lw400.gpd",
+		"/C/Program Files (x86)/DYMO Label/Drivers/lw400tt.gpd",
+		"/C/Program Files (x86)/DYMO/DYMO Label Software/x64/DLSSDKCOMLibrary.dll",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/QuickPrint/config.label",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/fea408e9-0a8c-4969-92a0-43f36cb7be65WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/f37358b9-cb88-408d-8ab8-86c169710ee9WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/f07ea88f-15b9-4c52-873d-ac2a3a754d43WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/EXCEL_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/ed93d0a9-37d0-463e-b506-6cfcc9b426e2WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/DymoQuickPrint_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/da8de87a-7e7e-41cb-856b-22f39f9c854fWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/d46700d9-a4a9-42df-a8f1-7aaaf34e211dWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/d84f62cb-0717-4087-a5ce-4ad8b6ff62bbWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/bd6a029d-83c3-4e4f-888d-2ec0b086d323WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/bbf5406b-824a-48ec-8b9d-365595e7f2e2WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/3886ad86-5b65-4961-bac9-4968bcc0504aWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/988d27b3-543b-4630-913a-0e45357b0e01WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/967f0f3d-31b8-4d52-aa0c-90ab0b276c44WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/906ce886-f82f-4334-9e1a-f951966f5663WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/402c2d14-910d-4a13-a291-0e7aca9f7050WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/312cde9b-6c78-49db-b50a-971509f4f6fdWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/52ee00e5-e17c-4949-b893-97705e35d0f0WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/8d17d2d3-a90a-4329-b2c0-3e9e0f9a915bWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/6ba66684-b454-4f7b-8af8-9873328161a1WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/5ccca305-d5e8-4bca-93d1-d5550bdbefb2WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/2f9932d9-5036-4023-8be5-08015117005dWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/2dc8c93c-2323-4a0f-a211-f718a4ff310eWINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/Addins/1a687c63-075a-4f85-8a12-bbea31dc2055WINWORD_DYMOAddins.log",
+		"/C/Users/Alex/AppData/Local/DYMO/DLS8/DLS8.log.xml.1",
+		"/C/Users/Alex/AppData/Local/DYMO/DLS8/SavedLabels.xml",
+		"/C/Users/Alex/AppData/Local/DYMO/DLS8/DLS8.log.xml",
+		"/C/Program Files (x86)/DYMO/DYMO Label Software/DLSSDKCOMLibrary.dll",
+		"/C/Program Files (x86)/DYMO/DYMO Label Software/Drivers/lw400.ini",
+		"/C/Program Files (x86)/DYMO/DYMO Label Software/Drivers/DYMO.inf",
+		"/U/FinalArtwork/A&B/Look Book/2014/TSH Xmas 14/TSH Christmas 2014 Lookbook.html",
+		"//ASHBURMAIN/RedirectedFolders/AlexBrown/My Documents/Website Dreamweaver ASP Trade/templates/AshleighBurwood/Page/TradeForm/Default.ascx",
+		"/U/FinalArtwork/A&B/Look Book/2014/PFL Xmas 14/Christmas 2014 Lookbook.html",
+		"/C/Users/Alex/Downloads/jquery.bxslider/jquery.bxslider.css",
+		"/C/Users/Alex/Downloads/spanish subtitles/captions.srt",
+		"//ASHBURMAIN/RedirectedFolders/alexbrown/Desktop/Archive/captions.sbv",
+		"//ASHBURMAIN/RedirectedFolders/alexbrown/Desktop/Look Book Xmas13.html",
+		"//ASHBURMAIN/RedirectedFolders/alexbrown/Desktop/cookieControl-6.2.min.js",
+		"/C/nodeStuff/helloworld.js",
+		"//ASHBURMAIN/RedirectedFolders/alexbrown/Desktop/helloworld.js",
+		"/U/FinalArtwork/A&B/Look Book/Xmas 2013/Look Book Xmas13 Folder/Look Book Xmas13_RETAIL.html",
+		"//ASHBURMAIN/RedirectedFolders/AlexBrown/My Documents/Website Dreamweaver ASP Trade/controls/default_template/Page/TradeForm/Default.ascx",
+		"//ASHBURMAIN/RedirectedFolders/AlexBrown/My Documents/Website Dreamweaver ASP Trade/trade/registration/default.aspx",
+		"/C/Program Files (x86)/Aspidistra/Shopfront Designer/Live/1.0.0.31338/ShopfrontDesigner.exe.config",
+		"//ASHBURMAIN/RedirectedFolders/AlexBrown/My Documents/Website Dreamweaver ASP Trade/templates/AshleighBurwood/Page/TradeCart/Default.ascx",
+		"//ASHBURMAIN/RedirectedFolders/AlexBrown/My Documents/Website Dreamweaver ASP Trade/templates/AshleighBurwood/Page/TradeOrder/Default.ascx"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"redraw",
+			"photos-boutique-dec-2012-150",
+			"photos-boutique-dec-2012-149",
+			"photos-boutique-dec-2012-139",
+			"photos-boutique-dec-2012-137",
+			"ambiancescreatives",
+			"Ambiances Creatives",
+			"McElhinneys",
+			"McElhinneys Department Store",
+			"freeform",
+			"FreeForm Studio",
+			"ASHBURMAIN",
+			"redirect",
+			"display",
+			"Cherry Hill Garden Centre",
+			"cherryhill",
+			"shop_front",
+			"essentialclothing",
+			"Essential Clothing",
+			"pacific",
+			"pacificnurseries",
+			"Pacific Nurseries",
+			"wrights_shop_front",
+			"Wrights",
+			"crazywicks",
+			"Crazy Wicks",
+			"store01",
+			"gayseymaisey",
+			"Gaysey Maisey",
+			"houseofashleypeake",
+			"House of Ashley Peake",
+			"whynot",
+			"Why Not Gallery",
+			"crazydaisy",
+			"Crazy Daisy",
+			"crazydaisy",
+			"bigongifts",
+			"Big on Gifts",
+			"DSC_0038",
+			"chicart",
+			"Chic Art",
+			"DSC_0038",
+			"shop-front-2",
+			"homedelights",
+			"Home Delights",
+			"display",
+			"brightideas",
+			"Bright Ideas",
+			"photo",
+			"blueberrysquare",
+			"Blueberry Square",
+			"shopfront",
+			"Equilibrium",
+			"JPG",
+			"844",
+			"giftbox",
+			"The Gift Box - Uxbridge",
+			"844",
+			"SHOP-FRONTAGE",
+			"romancandles",
+			"Roman Candles of Bath",
+			"7ldtPpqwgcA",
+			"yvesdelorme",
+			"Yves Delorme",
+			"postWP_20140206_014",
+			"postWP_20140206_012",
+			"postWP_20140206_011",
+			"versaltradinghouse",
+			"Versal Trading House",
+			"postIMG_4351",
+			"postIMG_4315",
+			"postIMG_4308",
+			"yvesdelorme",
+			"Yves Delorme",
+			"orangetree",
+			"The Orange Tree",
+			"primandproper",
+			"Prim and Proper Gift House",
+			"Higham-girlsphoto",
+			"cranberryhouse",
+			"Cranberry House",
+			"aceclearance",
+			"Ace Clearance",
+			"shipley",
+			"beales",
+			"Beales of Skegness",
+			"trend",
+			"Trend Jewellery",
+			"oldrids",
+			"british",
+			"Brigg Garden Centre",
+			"Squires Near Worthing",
+			"photo",
+			"squiresworthing",
+			"photos-boutique-dec-2012-151",
+			"photos-boutique-dec-2012-150",
+			"photos-boutique-dec-2012-149",
+			"photos-boutique-dec-2012-139",
+			"photos-boutique-dec-2012-137",
+			"ambiancescreatives",
+			"Ambiances Creatives",
+			"GalleryMainroom",
+			"percyhousegallery",
+			"Percy House Gallery",
+			"image2",
+			"maisondelamond",
+			"Maison de Lamond",
+			"Love Lana",
+			"lovelana",
+			"ambiancescreatives",
+			"Ambiances Creatives",
+			"ambiancescreatives",
+			"Ambiances Creatives",
+			"ambiancescreatives"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"shop-pic-1",
+			"ab-stock-pic-2",
+			"ab-stock-3",
+			"AB-Stock-pic-1",
+			"foreverboutique",
+			"Forever Boutique",
+			"morwenna",
+			"Morwenna",
+			"McElhinneys",
+			"McElhinneys Department Store ",
+			"ashleigh.local",
+			"freeform",
+			"FreeForm Stuidio",
+			"freeform",
+			"display",
+			"woodbank",
+			"Woodbank Garden Centre",
+			"shop_front",
+			"essentialclothing",
+			"Essential Clothing",
+			"pacific",
+			"Pacific Nurseries",
+			"wrights_shop_front",
+			"wrights",
+			"Wrights",
+			"crazywicks",
+			"Crazy Wicks",
+			"gayseymaisey",
+			"Gaysey Maisey",
+			"houseofashleypeake",
+			"House of Ashley Peake",
+			"whynot",
+			"Why Not Gallery",
+			"crazydaisy",
+			"store01",
+			"crazydaisy",
+			"Crazy Daisy",
+			"bigongifts",
+			"Big on Gifts",
+			"003",
+			"050",
+			"007",
+			"DSC_0038",
+			"chicart",
+			"Chic Art",
+			"shop-front-2",
+			"homedelights",
+			"Home Delights",
+			"display",
+			"brightideas",
+			"Bright Ideas",
+			"photo",
+			"Blueberry Square",
+			"jpg",
+			"shopfront",
+			"equilibrium",
+			"Equilibrium",
+			"851",
+			"850",
+			"849",
+			"844",
+			"giftbox",
+			"The Gift Box - Uxbridge",
+			"SHOP-FRONTAGE",
+			"romancandles",
+			"Roman Candles of Bath",
+			"postFxnM-mfT-L4",
+			"postDdOZS6ICT04",
+			"7ldtPpqwgcA",
+			"yvesdelorme",
+			"Yves Delorme",
+			"postWP_20140206_014",
+			"postWP_20140206_012",
+			"postWP_20140206_011",
+			"versaltradinghouse",
+			"Versal Trading House",
+			"yvesdelorme",
+			"Yves Delorme",
+			"orangetree",
+			"The Orange Tree",
+			"aandb",
+			"primandproper",
+			"Prim and Proper Gift House",
+			"cranberryhouse",
+			"Cranberry House",
+			"aceclearance",
+			"shipley",
+			"Shipley Garden Centre",
+			"beales",
+			"Beales of Skegness",
+			"trend",
+			"oldrids",
+			"Oldrids Lincolnshire",
+			"Brigg Garden Centre",
+			"british",
+			"display05",
+			"display04",
+			"display03",
+			"display02",
+			"display01",
+			"cherryhill",
+			"Cherry Hill Garden Centre",
+			"photo",
+			"squiresworthing",
+			"Squires Near Worthing",
+			"GalleryMainroom",
+			"percyhousegallery",
+			"Percy House Gallery",
+			"Maison de Lamond",
+			"maisondelamond",
+			"lovelana",
+			"Love Lana",
+			"Toniglam Salon",
+			"toniglam",
+			"Luxury House Versale",
+			"luxuryhouseversale"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "alexbrown.xyz.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
