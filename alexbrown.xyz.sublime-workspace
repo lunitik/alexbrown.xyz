@@ -3,6 +3,14 @@
 	{
 		"selected_items":
 		[
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			]
 		]
 	},
 	"buffers":
@@ -11,7 +19,8 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 186,
+				"buffer_size": 429,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -23,10 +32,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 104.0,
-		"last_filter": "package control: install",
+		"height": 375.0,
+		"last_filter": "c",
 		"selected_items":
 		[
+			[
+				"c",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"package control: install ",
+				"Package Control: Install Package"
+			],
+			[
+				"co",
+				"Colorsublime: Install Theme"
+			],
 			[
 				"package control: install",
 				"Package Control: Install Package"
@@ -88,7 +109,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 528.0
+		"width": 514.0
 	},
 	"console":
 	{
@@ -114,10 +135,17 @@
 	},
 	"expanded_folders":
 	[
-		"/D/alexbrown.xyz"
+		"/D/alexbrown.xyz",
+		"/D/alexbrown.xyz/assets",
+		"/D/alexbrown.xyz/assets/css"
 	],
 	"file_history":
 	[
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Alex/AppData/Roaming/Sublime Text 3/Packages/Alignment/Base File.sublime-settings",
 		"/C/nodeStuff/github-to-s3-deploy/deploy.env",
 		"/C/nodeStuff/github-to-s3-deploy/index.js",
 		"/C/nodeStuff/github-to-s3-deploy/.env",
@@ -474,15 +502,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 186,
+						"buffer_size": 429,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								186,
-								186
+								204,
+								204
 							]
 						],
 						"settings":
@@ -494,8 +522,8 @@
 								{
 									"1":
 									[
-										181,
-										185
+										201,
+										203
 									]
 								},
 								"icon":
@@ -510,8 +538,8 @@
 								{
 									"1":
 									[
-										17,
-										21
+										172,
+										174
 									]
 								},
 								"unmatched":
@@ -520,11 +548,16 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -535,46 +568,41 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
 							],
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
