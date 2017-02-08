@@ -1,3 +1,6 @@
 #Sublime Text Workspace files
 *.sublime-project
 *.sublime-workspace
+
+#Node.js Modules
+node_modules/
