@@ -8,37 +8,116 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Web Development - A Personal Project | alexbrown.xyz</title>
 	<script src="https://use.fontawesome.com/9ecb57cda0.js"></script>
+	<link rel="canonical" href="https://www.alexbrown.xyz">
 	<link rel="icon" href="https://s3.eu-west-2.amazonaws.com/alexbrown.xyz/assets/images/favicon.ico" type="image/x-icon"/>
 	<link rel="shortcut icon" href="https://s3.eu-west-2.amazonaws.com/alexbrown.xyz/assets/images/favicon.ico" type="image/x-icon"/>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/headroom.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pure-buttons-core.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pure-buttons.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pure-menus.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pure-forms.css" />
 </head>
 
-<body>
-	<header>
+<body class="Site">
+	<header class="headroom Site-header">
 		<div id="logo">
 			<a href="http://alexbrown.xyz"><span class="logo start">alex</span><span class="logo end">brown.xyz</span></a>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
-				<li><a href="#">link</a></li>
+		<nav class="pure-menu pure-menu-horizontal">
+			<ul class="pure-menu-list">
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">link</a></li>
+				<li class="pure-menu-item"><a href="#" class="pure-menu-link">link</a></li>
+				<li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+					<a href="#" id="menuLink1" class="pure-menu-link">link</a>
+					<ul class="pure-menu-children">
+	                <li class="pure-menu-item"><a href="#" class="pure-menu-link">link</a></li>
+	                <li class="pure-menu-item"><a href="#" class="pure-menu-link">link</a></li>
+	                <li class="pure-menu-item"><a href="#" class="pure-menu-link">link</a></li>
+	            </ul>
+				</li>
 			</ul>
 		</nav>
 	</header>
-	
-	<section id="hero">
-		<h1>Welcome to alexbrown.xyz</h1>
-    	<h2>This is the start of something.</h2>
-	</section>
+	<main class="Site-content">
 
-    <section>
-	    <p>It only bloody works Paul! Has the email been sent?</p>
-	    <button>yes</button>
-    </section>
+		<section class="flat shadow" id="hero">
+			<h1>Welcome to a short song</h1>
+	    	<h2>This is the start of something.</h2>
+		</section>
+
+	    <section class="shadow">
+		    <h2>buttons, buttons, buttons, buttons!</h2>
+		    <div class="pure-button-group" role="group" aria-label="button group example">
+		    	<button class="pure-button pure-button-primary">primary</button>
+		    	<button class="pure-button button-success">success</button>
+		    	<button class="pure-button button-error">error</button>
+		    	<button class="pure-button button-warning">warning</button>
+		    	<button class="pure-button button-secondary">secondary</button>
+		    </div>
+	    </section>
+
+	    <section class="shadow">
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus urna ut augue commodo, ac convallis neque facilisis. Cras vel gravida orci, et sagittis turpis. Vivamus quis mauris eget nibh fermentum convallis in quis libero. Praesent rhoncus tortor sed ipsum accumsan, vitae accumsan nisl maximus. Phasellus at pharetra nibh. Duis elementum erat ac quam hendrerit elementum. Vivamus a ex massa. Morbi semper justo suscipit sem finibus, nec dictum quam hendrerit. Sed condimentum tortor eu ligula gravida scelerisque. Pellentesque venenatis dignissim ipsum. Nulla dictum mauris id purus finibus pharetra.<br /><br />Quisque at turpis et augue mollis tempor in eget enim. Aliquam convallis vehicula tortor id cursus. Donec interdum eros ut ipsum ullamcorper blandit ut eget orci. Nulla id dui sed turpis congue rhoncus. Sed eget posuere arcu. Cras ac sapien non ipsum varius tincidunt. Pellentesque aliquam odio ut turpis placerat venenatis. Phasellus ultrices, est nec varius dictum, sapien ante porttitor justo, ut pretium nibh nulla sit amet justo. Praesent fringilla scelerisque mi nec aliquam. Mauris pellentesque nulla et semper ultrices. Proin venenatis libero ac lacus luctus, gravida auctor odio vulputate.<br /><br />Integer neque est, feugiat et odio eu, mattis porttitor augue. Phasellus iaculis sollicitudin suscipit. Pellentesque nec leo augue. Nulla non consequat diam. Nunc vitae pulvinar odio. Duis efficitur fermentum orci. Nam nec lorem nisl. Maecenas aliquam, lectus in congue euismod, nulla enim malesuada purus, id auctor enim felis vitae nisl. Suspendisse sagittis arcu eu elementum iaculis. Duis dapibus arcu arcu, at facilisis ante consectetur ac.<br /><br />Nam id libero pretium augue rutrum blandit non quis turpis. Fusce luctus enim non leo commodo hendrerit. Proin nec lectus sit amet massa ultrices blandit. Maecenas maximus sollicitudin dapibus. Aliquam sed ipsum arcu. Integer elit leo, dictum vitae auctor sit amet, interdum a ipsum. Maecenas ullamcorper aliquam magna et lacinia. Aenean dignissim porta ante vel aliquet. Aenean efficitur erat vel justo sollicitudin, at fermentum purus aliquet.<br /><br />Nullam elementum massa tortor, in sollicitudin ante auctor a. Quisque dignissim vel dolor in posuere. Cras laoreet massa id nisl tincidunt suscipit. Quisque at iaculis enim. Etiam eget ullamcorper mauris. Ut eget convallis nunc. Aenean sit amet magna in nibh volutpat sagittis vel et ligula. Pellentesque eu feugiat velit. Aliquam cursus odio dolor, quis varius justo mattis nec. Nulla facilisi. Nunc lacinia, enim ac vulputate fringilla, dui dui porttitor enim, in ornare dui ex sit amet lectus. Etiam tempor varius dolor, a porttitor mauris porta at. Fusce lobortis condimentum nulla, at congue nisl.</p>
+	    </section>
+
+	    <section class="shadow">
+	    	<h2>At the dawn, there was light</h2>
+	    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus urna ut augue commodo, ac convallis neque facilisis. Cras vel gravida orci, et sagittis turpis. Vivamus quis mauris eget nibh fermentum convallis in quis libero. Praesent rhoncus tortor sed ipsum accumsan, vitae accumsan nisl maximus. Phasellus at pharetra nibh. Duis elementum erat ac quam hendrerit elementum. Vivamus a ex massa. Morbi semper justo suscipit sem finibus, nec dictum quam hendrerit. Sed condimentum tortor eu ligula gravida scelerisque. Pellentesque venenatis dignissim ipsum. Nulla dictum mauris id purus finibus pharetra.<br /><br />Quisque at turpis et augue mollis tempor in eget enim. Aliquam convallis vehicula tortor id cursus. Donec interdum eros ut ipsum ullamcorper blandit ut eget orci. Nulla id dui sed turpis congue rhoncus. Sed eget posuere arcu. Cras ac sapien non ipsum varius tincidunt. Pellentesque aliquam odio ut turpis placerat venenatis. Phasellus ultrices, est nec varius dictum, sapien ante porttitor justo, ut pretium nibh nulla sit amet justo. Praesent fringilla scelerisque mi nec aliquam. Mauris pellentesque nulla et semper ultrices. Proin venenatis libero ac lacus luctus, gravida auctor odio vulputate.<br /><br />Integer neque est, feugiat et odio eu, mattis porttitor augue. Phasellus iaculis sollicitudin suscipit. Pellentesque nec leo augue. Nulla non consequat diam. Nunc vitae pulvinar odio. Duis efficitur fermentum orci. Nam nec lorem nisl. Maecenas aliquam, lectus in congue euismod, nulla enim malesuada purus, id auctor enim felis vitae nisl. Suspendisse sagittis arcu eu elementum iaculis. Duis dapibus arcu arcu, at facilisis ante consectetur ac.</p>
+	    	<h3>mindful of the glare you should be</h3>
+	    	<p>Nam id libero pretium augue rutrum blandit non quis turpis. Fusce luctus enim non leo commodo hendrerit. Proin nec lectus sit amet massa ultrices blandit. Maecenas maximus sollicitudin dapibus. Aliquam sed ipsum arcu. Integer elit leo, dictum vitae auctor sit amet, interdum a ipsum. Maecenas ullamcorper aliquam magna et lacinia. Aenean dignissim porta ante vel aliquet. Aenean efficitur erat vel justo sollicitudin, at fermentum purus aliquet.<br /><br />Nullam elementum massa tortor, in sollicitudin ante auctor a. Quisque dignissim vel dolor in posuere. Cras laoreet massa id nisl tincidunt suscipit. Quisque at iaculis enim. Etiam eget ullamcorper mauris. Ut eget convallis nunc. Aenean sit amet magna in nibh volutpat sagittis vel et ligula. Pellentesque eu feugiat velit. Aliquam cursus odio dolor, quis varius justo mattis nec. Nulla facilisi. Nunc lacinia, enim ac vulputate fringilla, dui dui porttitor enim, in ornare dui ex sit amet lectus. Etiam tempor varius dolor, a porttitor mauris porta at. Fusce lobortis condimentum nulla, at congue nisl.</p>
+	    </section>
+
+	    <section class="flat">
+	    	<h2>formally a form, that doesn't do anything</h2>
+	    	<p>presumably I'll need to spin up an EC2 instance to get this kind of functionality working on site.</p>
+	    	<hr class="width25" />
+    		<form class="pure-form pure-form-aligned" action="arn:aws:lambda:eu-west-2:912415976327:function:contactForm">
+			    <fieldset>
+			        <div class="pure-control-group">
+			            <label for="name">Username</label>
+			            <input id="name" type="text" placeholder="Username">
+			            <span class="pure-form-message-inline">This is a required field.</span>
+			        </div>
+
+			        <div class="pure-control-group">
+			            <label for="password">Password</label>
+			            <input id="password" type="password" placeholder="Password">
+			        </div>
+
+			        <div class="pure-control-group">
+			            <label for="email">Email Address</label>
+			            <input id="email" type="email" placeholder="Email Address">
+			        </div>
+
+			        <div class="pure-control-group">
+			            <label for="foo">Supercalifragilistic Label</label>
+			            <input id="foo" type="text" placeholder="Enter something here...">
+			        </div>
+
+			        <div class="pure-controls">
+			            <label for="cb" class="pure-checkbox">
+			                <input id="cb" type="checkbox"> I've read the terms and conditions
+			            </label>
+
+			            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+			        </div>
+			    </fieldset>
+			</form>
+	    </section>
+
+    </div>
+    <footer class="Site-footer">
+    	<p>this is going to be the footer.</p>
+    	<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+    </footer>
 </body>
 
 <!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/headroom.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
 </html>

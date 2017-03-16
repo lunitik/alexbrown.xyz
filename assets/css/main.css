@@ -72,14 +72,33 @@ a:hover, a:focus {
 	color: #000;
 }
 
-/* Header */
-header {
-	/*width: 100%;*/
-	display: flex;
-	/*max-height: 3em;*/
-	/*padding: 1.5em 0 1.5em 1.5em;*/
-	background-color: #edecf2;
-	box-shadow: 0 1px 5px 2px rgba(0,0,0,.15);
+/* Sticky Footer */
+/* The Flex approach, thanks css-tricks.com. saving me yet again!*/
+/*html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}*/
+
+.Site {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+}
+.Site-header,
+.Site-footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+.Site-content {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
 /* Logo */
@@ -115,9 +134,8 @@ h3 {
 	font-size: 1.5em;
 }
 
-nav {
+/*nav {
 	background-color: transparent;
-	/*padding: 0.25em;*/
 	text-align: center;
 }
 
@@ -125,7 +143,7 @@ nav ul > li {
 	display: inline-flex;
 	padding: 1em;
 	background-color: transparent;
-}
+}*/
 
 /*nav ul > li:not(:last-child):after {
 	content: "|";
@@ -137,8 +155,39 @@ section {
 	width: auto;
 	margin: 1.5em;
 	padding: 1em;
-	box-shadow: 0 1px 5px 2px rgba(0,0,0,.15);
 }
 section#hero {
 	background-color: #b0d7de;
+}
+
+section.flat {
+	margin: 0 auto;
+	padding: 1.5em;
+}
+
+footer {
+	background-color: #604c45;
+	border-top: 1px solid #000;
+	min-height: 1.5em;
+	text-align: center;
+	padding: 1em;
+}
+
+.shadow {
+	box-shadow: 0 1px 5px 2px rgba(0,0,0,.15);
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+hr {
+	margin: 1em;
+}
+
+.width25 {
+	width: 25%;
 }
