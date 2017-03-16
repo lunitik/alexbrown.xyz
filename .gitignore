@@ -4,3 +4,6 @@
 
 #Node.js Modules
 node_modules/
+
+#Windows Crap
+Thumbs.db
