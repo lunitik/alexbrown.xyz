@@ -50,15 +50,15 @@
 		</section>
 
 	    <section class="flat">
-	    	<h2>formally a form, that doesn't do anything</h2>
-	    	<p>presumably I'll need to spin up an EC2 instance to get this kind of functionality working on site.</p>
+	    	<h2>formally a form, that is trying to do something</h2>
+	    	<p>AWS API Gateway is the endpoint this form POSTs to and is supposed to trigger an AWS SNS to run a something which does a bit more something and I'll get an email with the contents of the form.... if CORS isn't a problem and I can allow it.</p>
 	    	<hr class="width25" />
 	    	<div id="form-messages"></div>
-    		<form id="ajax-contact" class="pure-form pure-form-aligned" method="POST" action="https://api.alexbrown.xyz/email">
+    		<form id="ajax-contact" class="pure-form pure-form-aligned" method="POST" action="https://api.alexbrown.xyz/email/">
 			    <fieldset>
 			        <div class="pure-control-group">
-			            <label for="name">Full Name</label>
-			            <input id="name" type="text" placeholder="Full Name" required>
+			            <label for="fullname">Full Name</label>
+			            <input id="fullname" type="text" placeholder="Full Name" required>
 			            <span class="pure-form-message-inline">This is a required field.</span>
 			        </div>
 
@@ -90,6 +90,6 @@
 <!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="assets/js/headroom.js" type="text/javascript" charset="utf-8"></script>
-<script src="assets/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-<script src="assets/js/contact.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+<script src="assets/js/contact.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -1,7 +1,7 @@
 $(function() {
 	'use-strict';
 	//Get the form
-	var form = $('ajax-contact');
+	var form = $('#ajax-contact');
 
 	// Get the messages div.
     var formMessages = $('#form-messages');
@@ -13,9 +13,9 @@ $(function() {
 
 	    const subject = "Contact from alexbrown.xyz";
 	    const topicarn = "arn:aws:sns:eu-west-2:912415976327:contact-form";
-	    let fullname = $('#fullname');
-	    let email = $('#email');
-	    let messageContent = $('#message');
+	    let fullname = $('#fullname').val();
+	    let email = $('#email').val();
+	    let messageContent = $('#message').val();
 	    const message = "Full Name: " + fullname + "/nEmail: " + email + "/nMessage: " + messageContent;
 
 	    //Validate Form? Not much to validate really.
@@ -29,10 +29,13 @@ $(function() {
 		};
 
 		let decoded = decodeURIComponent( $.param( params ) );
+		/*let combinedURL = $(form).attr('action') + "?" + decoded;
+		console.log(combinedURL);*/
 
 		// Submit the form using AJAX.
 		$.ajax({
 		    type: 'POST',
+		    headers: {"Access-Control-Allow-Origin" : "*.alexbrown.xyz"},
 		    url: $(form).attr('action'),
 		    data: decoded
 		})
@@ -45,7 +48,7 @@ $(function() {
 		    $(formMessages).text(response);
 
 		    // Clear the form.
-		    $('#name').val('');
+		    $('#fullname').val('');
 		    $('#email').val('');
 		    $('#message').val('');
 		})
