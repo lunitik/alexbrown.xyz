@@ -35,7 +35,6 @@ $(function() {
 		// Submit the form using AJAX.
 		$.ajax({
 		    type: 'POST',
-		    headers: {"Access-Control-Allow-Origin" : "*.alexbrown.xyz"},
 		    url: $(form).attr('action'),
 		    data: decoded
 		})
