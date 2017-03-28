@@ -1,3 +1,5 @@
+//many thanks to Gustavo Gonnet: https://www.hackster.io/gusgonnet/email-notifications-using-amazon-web-services-cd2bf3
+//and Matt West: http://blog.teamtreehouse.com/create-ajax-contact-form
 $(function() {
 	'use-strict';
 	//Get the form
@@ -30,7 +32,7 @@ $(function() {
 
 		let decoded = decodeURIComponent( $.param( params ) );
 		let combinedURL = $(form).attr('action') + "?" + decoded;
-		console.log(combinedURL);
+		//console.log(combinedURL);
 
 		// Submit the form using AJAX.
 		$.ajax({
@@ -42,10 +44,10 @@ $(function() {
 		    $(formMessages).removeClass('error');
 		    $(formMessages).addClass('success');
 
-		    console.log(response);
+		    //console.log(response);
 
 		    // Set the message text.
-		    $(formMessages).text(response);
+		    $(formMessages).text("Thank you for gettin in touch. Your message should now have been delivered and I will be in touch shortly.");
 
 		    // Clear the form.
 		    $('#fullname').val('');
