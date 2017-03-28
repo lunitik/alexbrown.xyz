@@ -16,7 +16,7 @@ $(function() {
 	    let fullname = $('#fullname').val();
 	    let email = $('#email').val();
 	    let messageContent = $('#message').val();
-	    const message = "Full Name: " + fullname + "/nEmail: " + email + "/nMessage: " + messageContent;
+	    const message = "Full Name: " + fullname + "\nEmail: " + email + "\nMessage: " + messageContent;
 
 	    //Validate Form? Not much to validate really.
 	    //Sanitise input? Perhaps, although no data base involved.
@@ -41,6 +41,8 @@ $(function() {
 		    // Make sure that the formMessages div has the 'success' class.
 		    $(formMessages).removeClass('error');
 		    $(formMessages).addClass('success');
+
+		    console.log(response);
 
 		    // Set the message text.
 		    $(formMessages).text(response);
