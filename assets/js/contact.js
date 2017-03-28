@@ -29,14 +29,13 @@ $(function() {
 		};
 
 		let decoded = decodeURIComponent( $.param( params ) );
-		/*let combinedURL = $(form).attr('action') + "?" + decoded;
-		console.log(combinedURL);*/
+		let combinedURL = $(form).attr('action') + "?" + decoded;
+		console.log(combinedURL);
 
 		// Submit the form using AJAX.
 		$.ajax({
 		    type: 'POST',
-		    url: $(form).attr('action'),
-		    data: decoded
+		    url: combinedURL
 		})
 		.done(function(response) {
 		    // Make sure that the formMessages div has the 'success' class.
