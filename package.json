@@ -1,0 +1,23 @@
+{
+  "name": "alexbrown.xyz",
+  "version": "1.0.0",
+  "description": "this is all about me.",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.18.12"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
+  },
+  "scripts": {
+    "test": "browser-sync start --config bs-config.js"
+  },
+  "keywords": [
+    "CV",
+    "2017",
+    "Alex",
+    "Brown"
+  ],
+  "author": "Alex Brown",
+  "license": "ISC"
+}
