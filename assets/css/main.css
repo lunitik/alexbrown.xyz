@@ -317,6 +317,9 @@ section {
 }
 
 section#hero {
+    background-image: url('/assets/images/banner-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #b0d7de;
     position: relative;
     display: -webkit-box;
@@ -334,10 +337,34 @@ section#hero {
     padding: 4rem 0 1rem 0;
 }
 
+/*not working?*/
+section#personalstatement:after {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, .15);
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .15);
+}
+
 #hero > h1,
 #hero > h2 {
     margin: 1rem;
     border-collapse: collapse;
+    font-weight: bold;
+   color: snow;
+   text-shadow:
+   1px 1px 0 #000,  
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#hero > h1:after {
+    content: ' - technology enthusiast';
+    font-size: 75%;
+    font-style: italic;
+    color: rgba(176, 215, 222, 0.5);
 }
 
 section.flat {
@@ -500,11 +527,12 @@ hr {
         -ms-flex-direction:     column;
             flex-direction:     column;
     width: 30%;
-    background-color: #b0d7de;
+    background-color: rgba(176, 215, 222, 0.5);
 }
 
 .cv-sidebar > section > h2,
-#education > h2 {
+#education > h2,
+#personalstatement > h2 {
     text-transform: uppercase;
     -webkit-text-decoration-skip: ink;
     text-decoration-skip: ink;
@@ -538,6 +566,12 @@ hr {
     -ms-flex-direction: column;
     flex-direction: column;
     height: auto;
+}
+
+#personalstatement > h2:before {
+    font-family: 'FontAwesome';
+    content: '\f2be';
+    margin-right: 0.5rem;
 }
 
 #skills > h2:before {
@@ -588,7 +622,19 @@ hr {
     width: 100%;
     margin-bottom: 1rem;
     border-bottom: 2px solid #C0C0C0;
-    border-style-skip: ink;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(75%, #C0C0C0));
+    background-image: linear-gradient(transparent 50%, #C0C0C0 75%);
+    background-size: 100% 200%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+}
+
+.ed-entry:hover {
+    background-position: 100%;
+}
+
+.ed-entry:hover > .qualification {
+    color: #657b80;
 }
 
 .place-holder {
@@ -642,10 +688,197 @@ hr {
 
 .qualification {
     color: #b0d7de;
+    -webkit-transition: color 300ms ease-in-out 200ms;
+    transition: color 300ms ease-in-out 200ms;
     padding: 0.25rem 0;
 }
 
+.aboutme-container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.profile {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #604c45;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #604c45;
+    background-image: url('/assets/images/profile-image-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.profile-image:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.aboutme-details {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 10rem;
+    max-width: 100%;
+    margin-left: 1rem;
+}
+
+.personalstatement > p:nth-of-type(1) {
+    margin-bottom: 1rem;
+}
+
+.personalstatement > p:nth-of-type(1):before {
+    font-family: 'FontAwesome';
+    content: '\f10d';
+    margin-right: 0.5rem;
+}
+
+.personalstatement > p:last-of-type:after {
+    font-family: 'FontAwesome';
+    content: '\f10e';
+    margin-left: 0.5rem;
+}
+
+/*.interests > p {
+    text-align: center;
+}*/
+.interests > p > span {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.interests > p > span:hover,
+.interests > p > span:focus {
+}
+
+.interests > p > span:before {
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 200%;
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-shadow: 0 0 0 transparent;
+    vertical-align: middle;
+    text-align: center;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+
+.interests > p > span:hover:before {
+    color: rgba(255, 255, 255, 0.25);
+    text-shadow:
+        0 0 0.1rem #025baa,  
+        0 0 0.1rem #025baa,
+        0 0 0.1rem #025baa,
+        0 0 0.1rem #025baa;
+}
+
+span#tech:before {
+    content: '\f011';
+}
+
+span#comp:before {
+    content: '\f0a0';
+}
+
+span#web:before {
+    content: '\f10b';
+}
+
+span#gaming:before {
+    content: '\f11b';
+}
+
+span#learning:before {
+    content: '\f02d';
+}
+
+span#cooking:before {
+    content: '\f0f5';
+}
+
+span#parent:before {
+    content: '\f1ae';
+}
+
+span#photography:before {
+    content: '\f030';
+}
+
+span#scifi:before {
+    content: '\f281';
+}
+
+span#pool:before {
+    content: '\f111';
+}
+
+span#music:before {
+    content: '\f001';
+}
+
+span#guitar:before {
+    content: '\f255';
+}
+
 @media all and (max-width: 980px) {
+
+    #hero > h1:after {
+        display: block;
+        content: 'technology enthusiast';
+        font-size: 50%;
+    }
     .cv-sidebar {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -656,7 +889,13 @@ hr {
         max-width: 100%;
         width: auto;
         min-height: auto;
-        margin: 1rem 0;
+        margin: 0 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    .cv-sidbar > section:nth-of-type(1) {
+
     }
     .cv-sidebar > section > .lists {
         width: 100%;
@@ -717,5 +956,12 @@ hr {
     .place-location:before {
         content: '';
         display: none;
+    }
+
+    .aboutme-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
