@@ -841,18 +841,32 @@ hr {
 }
 
 .interests span:hover {
-    color: rgba(255, 255, 255, 0.25);
-    text-shadow:
+    color: rgba(176, 215, 222, 1);
+    /*text-shadow:
         0 0 0.1rem #025baa,  
         0 0 0.1rem #025baa,
         0 0 0.1rem #025baa,
-        0 0 0.1rem #025baa;
+        0 0 0.1rem #025baa;*/
 }
 
 .interests span:hover div {
     opacity: 1;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
+}
+
+#pool:after {
+    position: absolute;
+    -webkit-transform: translate(-1.4rem, 0.425rem);
+            transform: translate(-1.4rem, 0.425rem);
+    content: '8';
+    background-color: white;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    line-height: 1rem;
+    font-size: 50%;
 }
 
 @media all and (max-width: 980px) {
@@ -962,5 +976,15 @@ hr {
     .interests span:hover div {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-}
+    }
+
+    .cv-sidebar > section > .lists > div {
+        width: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+
+    .aboutme-details {
+        margin-left: 0;
+    }
 }
