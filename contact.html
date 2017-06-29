@@ -49,10 +49,10 @@
 	    	<h2>Complete the form below and I'll get right back to you.</h2>
 		</section>
 
-	    <section class="flat">
+	    <section class="flat" id="contact-form">
 	    	<h2>formally a form, that does do something</h2>
 	    	<p>AWS API Gateway is the endpoint this form POSTs to and it triggers an AWS SNS which in turns sends the contents of the form to me via an email!</p>
-	    	<hr class="width25" />
+	    	<hr class="" />
 	    	<div id="form-messages"></div>
     		<form id="ajax-contact" class="pure-form pure-form-aligned" method="POST" action="https://api.alexbrown.xyz/email/">
 			    <fieldset>
@@ -64,7 +64,7 @@
 
 			        <div class="pure-control-group">
 			            <label for="email">Email Address</label>
-			            <input id="email" type="email" placeholder="Email Address" required>
+			            <input id="email" type="email" placeholder="Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
 			            <span class="pure-form-message-inline">*</span>
 			        </div>
 
