@@ -154,13 +154,13 @@ body {
 
 /* Site Colour Palette */
 
-/*
-    turquoise   = #98d3d4
-    light blue  = #b0d7de
-    grey        = #edecf2
-    light brown = #a89898
-    brown       = #604c45
- */
+:root {
+  --colour-turquoise: #98d3d4;
+  --colour-light-blue: #b0d7de;
+  --colour-grey: #edecf2;
+  --colour-light-brown: #a89898;
+  --colour-brown: #604c45;
+}
 
 /* links */
 
@@ -993,5 +993,47 @@ hr {
 
   .aboutme-details {
     margin-left: 0;
+  }
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+
+
+}
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+.scroller__container {
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.scroller__content {
+  padding: 1rem;
+  color: var(--colour-turquoise);
+  background-color: var(--colour-brown);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem -0.125rem #000;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
