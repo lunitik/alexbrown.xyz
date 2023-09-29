@@ -1,6 +1,7 @@
 const path = require('path');
+
 module.exports = {
-  entry: './assets/js/src/index.ts',
+  entry: './src/js/index.ts',
   mode: 'development',
   module: {
     rules: [
@@ -17,7 +18,7 @@ module.exports = {
       {
          test: /\.js$/,
          loader: "source-map-loader"
-         },
+      }
     ],
   },
   devtool: "source-map",
@@ -26,9 +27,9 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'assets/js/built')
+    path: path.resolve(__dirname, 'assets/js')
   },
   stats: {
     errorDetails: true
-  }
+  },
 };

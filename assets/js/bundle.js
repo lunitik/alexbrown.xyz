@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./assets/js/src/contact.ts":
-/*!**********************************!*\
-  !*** ./assets/js/src/contact.ts ***!
-  \**********************************/
+/***/ "./build/js/src/contact.ts":
+/*!*********************************!*\
+  !*** ./build/js/src/contact.ts ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -81,10 +81,10 @@ var ContactForm = /** @class */function () {
 
 /***/ }),
 
-/***/ "./assets/js/src/scroller.ts":
-/*!***********************************!*\
-  !*** ./assets/js/src/scroller.ts ***!
-  \***********************************/
+/***/ "./build/js/src/scroller.ts":
+/*!**********************************!*\
+  !*** ./build/js/src/scroller.ts ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -11368,16 +11368,16 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!********************************!*\
-  !*** ./assets/js/src/index.ts ***!
-  \********************************/
+/*!*******************************!*\
+  !*** ./build/js/src/index.ts ***!
+  \*******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! headroom.js */ "./node_modules/headroom.js/dist/headroom.js");
 /* harmony import */ var headroom_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(headroom_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _scroller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scroller */ "./assets/js/src/scroller.ts");
-/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ "./assets/js/src/contact.ts");
+/* harmony import */ var _scroller__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scroller */ "./build/js/src/scroller.ts");
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact */ "./build/js/src/contact.ts");
 /*!
  * main.ts v0.0.1 - The site's main typescript document.
  * Copyright (c) 2023 Alex Brown - https://alexbrown.xyz

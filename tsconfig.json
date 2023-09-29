@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "./assets/js/built",
+      "outDir": "./assets/js",
       "noImplicitAny": true,
       "module": "es6",
       "allowJs": true,
@@ -8,5 +8,5 @@
       "moduleResolution": "node",
       "allowSyntheticDefaultImports": true
     },
-    "include": ["./assets/js/src/**/*"]
+    "include": ["./src/js/**/*"]
   }
