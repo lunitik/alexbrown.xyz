@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "outDir": "./assets/js/built",
+      "noImplicitAny": true,
+      "module": "es6",
+      "allowJs": true,
+      "target": "es5",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["./assets/js/src/**/*"]
+  }
