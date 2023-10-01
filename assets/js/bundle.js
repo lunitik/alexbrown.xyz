@@ -12,26 +12,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContactForm: function() { return /* binding */ ContactForm; }
 /* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 //many thanks to Gustavo Gonnet: https://www.hackster.io/gusgonnet/email-notifications-using-amazon-web-services-cd2bf3
 //and Matt West: http://blog.teamtreehouse.com/create-ajax-contact-form
+
 var ContactForm = /** @class */function () {
   function ContactForm() {}
   ContactForm.prototype.init = function () {
     'use-strict';
 
     //Get the form
-    var $form = $('#ajax-contact');
+    var $form = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#ajax-contact');
     // Get the messages div.
-    var $formMessages = $('#form-messages');
+    var $formMessages = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#form-messages');
     // Set up an event listener for the contact form.
     $form.on("submit", function (event) {
       // Stop the browser from submitting the form.
       event.preventDefault();
       var subject = "Contact from alexbrown.xyz";
       var topicarn = "arn:aws:sns:eu-west-2:912415976327:contact-form";
-      var fullname = $('#fullname').val();
-      var email = $('#email').val();
-      var messageContent = $('#message').val();
+      var fullname = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#fullname').val();
+      var email = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#email').val();
+      var messageContent = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#message').val();
       var message = "Full Name: " + fullname + "\nEmail: " + email + "\nMessage: " + messageContent;
       //Validate Form? Not much to validate really.
       //Sanitise input? Perhaps, although no data base involved.
@@ -41,11 +44,11 @@ var ContactForm = /** @class */function () {
         "TopicArn": topicarn,
         "Message": message
       };
-      var decoded = decodeURIComponent($.param(params));
+      var decoded = decodeURIComponent(jquery__WEBPACK_IMPORTED_MODULE_0___default().param(params));
       var combinedURL = $form.attr('action') + "?" + decoded;
       //console.log(combinedURL);
       // Submit the form using AJAX.
-      $.ajax({
+      jquery__WEBPACK_IMPORTED_MODULE_0___default().ajax({
         type: 'POST',
         url: combinedURL
       }).done(function (response) {
@@ -56,9 +59,9 @@ var ContactForm = /** @class */function () {
         // Set the message text.
         $formMessages.text("Thank you for gettin in touch. Your message should now have been delivered and I will be in touch shortly.");
         // Clear the form.
-        $('#fullname').val('');
-        $('#email').val('');
-        $('#message').val('');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('#fullname').val('');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('#email').val('');
+        jquery__WEBPACK_IMPORTED_MODULE_0___default()('#message').val('');
       }).fail(function (data) {
         // Make sure that the formMessages div has the 'error' class.
         $formMessages.removeClass('success');

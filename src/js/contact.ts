@@ -1,5 +1,7 @@
 //many thanks to Gustavo Gonnet: https://www.hackster.io/gusgonnet/email-notifications-using-amazon-web-services-cd2bf3
 //and Matt West: http://blog.teamtreehouse.com/create-ajax-contact-form
+import $ from 'jquery';
+
 export class ContactForm {
 
 	init() {
