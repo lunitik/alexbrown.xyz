@@ -1,0 +1,90 @@
+@import '../../assets/scss/index.scss';
+
+.about {
+    &__container {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". about about about about about about about about about about .";
+
+        @include xxl {
+            grid-template-areas: 
+                ". . about about about about about about about about . .";
+
+        }
+
+        @include fourxl {
+            grid-template-areas: 
+                ". . . about about about about about about . . .";
+
+        }
+
+        &__inner {
+            grid-area: about;
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto; 
+            
+            @include medium {
+                grid-template-rows: 1fr 1fr 1fr; 
+            }
+            gap: 0px 0px; 
+            align-items: center;
+            grid-template-areas: 
+                "heading heading heading heading heading heading heading heading heading heading heading heading"
+                "details details details details details details details details details details details details"
+                "interests interests interests interests interests interests interests interests interests interests interests interests";
+        }
+    }
+
+    &__heading {
+        grid-area: heading;
+
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    &__details {
+        margin-top: 2rem;
+        grid-area: details;
+        position: relative;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        gap: 1rem;
+        flex-direction: column;
+
+        @include medium {
+            flex-direction: row;
+        }
+    }
+
+    &__personalstatement {
+        line-height: 1.5;
+        font-size: 1.125rem;
+
+        &__heading {
+            margin-top: 0;
+        }
+    }
+
+    &-colour-mode {
+        &--light {
+            h1, h2, h3, h4, h5, h6 {
+                color: var(--colour-brown);
+            }
+        }
+
+        &--dark {
+            h1, h2, h3, h4, h5, h6 {
+                color: var(--colour-light-grey);
+            }
+        }
+    }
+}

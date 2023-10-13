@@ -1,0 +1,47 @@
+@import '../../assets/scss/index.scss';
+
+.profileimage {
+    &__container {
+        position: relative;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        width: auto;
+        height: auto;
+        aspect-ratio: 1;
+
+        @include medium {
+            width: 150px;
+            height: 150px;
+        }
+        border: 1px solid var(--colour-brown);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--colour-brown);
+        background-image: url("/images/profile-image-02.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-transform: scale(3);
+        transform: scale(3);
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+
+        &:hover,
+        &:focus {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}

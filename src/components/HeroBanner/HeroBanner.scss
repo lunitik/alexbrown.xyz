@@ -1,0 +1,71 @@
+.herobanner {
+    &__container {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        padding: 4rem 0 1rem 0;
+        min-height: 500px;
+        z-index: auto;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+
+        &-colour-mode {
+          &--dark {
+            h1, h2, h3, h4, h5, h6 {
+              color: var(--colour-light-grey);
+            }
+          }
+
+          &--light {
+            h1, h2, h3, h4, h5, h6 {
+              color: var(--colour-brown);
+            }
+          }
+        }
+    }
+    
+    &__heading {
+      margin-top: 5rem;
+    }
+
+    &__background {
+      background: var(--colour-turquoise);
+      background: linear-gradient(
+        120deg,
+        var(--colour-turquoise) 0%,
+        var(--colour-light-blue) 50%,
+        var(--colour-grey) 100%
+      );
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: skewY(6deg);
+      transform-origin: top right;
+      z-index: -1;
+
+      &[data-color-mode="dark"] {
+        background: var(--colour-brown);
+        background: linear-gradient(
+          120deg,
+          var(--colour-black) 0%,
+          var(--colour-light-black) 50%,
+          var(--colour-dark-grey) 100%
+        );
+      }
+    }
+}

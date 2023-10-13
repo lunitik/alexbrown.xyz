@@ -1,0 +1,71 @@
+#logo {
+  display: flex;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem;
+  min-width: 12ch;
+  font-family: "Open Sans", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  & a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    display: block;
+    position: relative;    
+    transition: width 200ms ease-in-out;
+    z-index: -1;
+  }
+
+  & a:hover::after,
+  & a:focus::after {
+    width: 100%;
+  }
+}
+
+.logo {
+  display: inline-block;
+
+  &--start {
+    animation: bounce-interval;
+    animation-delay: 2s;
+    animation-duration: 20s !important;
+  }
+
+  &-color-mode {
+    &--dark {
+      .logo {
+        &--start {
+          color: var(--colour-light-brown);
+        }
+
+        &--end {
+          color: var(--colour-black);
+        }
+      }
+
+      a::after {
+        background-color: var(--colour-light-blue);
+      }
+    }
+
+    &--light {
+      .logo {
+        &--start {
+          color: var(--colour-brown);
+        }
+
+        &--end {
+          color: var(--colour-light-blue);
+        }
+      }
+
+      a::after {
+        background-color: var(--colour-black);
+      }
+    }
+  }
+}
