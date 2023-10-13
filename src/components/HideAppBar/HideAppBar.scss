@@ -1,0 +1,17 @@
+.hideappbar {
+    padding: 1rem;
+
+    &-colour-mode {
+        &--light {
+            background-color: var(--colour-grey) !important;
+        }
+
+        &--dark {
+            background-color: var(--colour-brown) !important;
+        }
+    }
+
+    &__inner {
+        gap: 1rem;
+    }
+}

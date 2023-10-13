@@ -1,0 +1,33 @@
+.navigationmenu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    a {
+        &.active {
+            text-decoration: underline;
+        }
+    }
+
+    & > *:last-child {
+        margin-left: auto;
+    }
+
+    &__container-utility {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__drawer {
+        &__list {
+            li {
+                padding: 1rem 0;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.MuiModal-backdrop {
+    backdrop-filter: blur(5px);
+}

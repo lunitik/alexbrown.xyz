@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import './normalise.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+/* links */
+
+a {
+    text-decoration: none;
+    color: var(--colour-light-grey);
+    -webkit-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+  }
+  
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    color: var(--colour-black);
+  }
+  
+  /* Sticky Footer */
+  
+  /* The Flex approach, thanks css-tricks.com. saving me yet again!*/
+  
+  html {
+    height: 100%;
+  }
+  
+  body,
+  html {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto;
+    max-height: 100%;
+    /* Avoid the IE 10-11 `min-height` bug. */
+  }
+  
+  .headroom-wrapper,
+  #site-footer {
+    flex-shrink: 0;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  }
+  
+  main {
+    position: relative;
+    flex: 1 1 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    flex-direction: column;
+    width: inherit;
+    height: auto;
+  }
+  
+  /* h tags */
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
+    margin-top: 0.5rem;
+    border-bottom: 0.1rem solid var(--colour-brown);
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  /* sections */
+  
+  section {
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 1rem;
+  }

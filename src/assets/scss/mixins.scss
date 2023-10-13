@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+/**
+    Example Usage:
+
+    .container {
+        @include small {
+            max-width: 450px;
+        }
+        ...
+    }
+
+*/
+@mixin small {
+    @media only screen and (min-width: $small) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media only screen and (min-width: $medium) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media only screen and (min-width: $large) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media only screen and (min-width: $xl) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media only screen and (min-width: $xxl) {
+        @content;
+    }
+}
+
+@mixin xxxl {
+    @media only screen and (min-width: $xxl) {
+        @content;
+    }
+}
+
+@mixin fourxl {
+    @media only screen and (min-width: $fourxl) {
+        @content;
+    }
+}

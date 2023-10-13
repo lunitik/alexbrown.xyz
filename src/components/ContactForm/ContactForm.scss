@@ -1,0 +1,79 @@
+@import '../../assets/scss/index.scss';
+@import 'purecss/build/pure.css';
+
+.contact {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px;
+    
+    
+    @include small {
+        grid-template-areas: 
+        ". contact contact contact contact contact contact contact contact contact contact .";
+    }
+    
+    @include medium {
+        grid-template-areas: 
+        ". contact contact contact contact contact contact contact contact contact contact .";
+    }
+
+    @include large {
+        grid-template-areas:
+        ". . contact contact contact contact contact contact contact contact . .";
+    }
+
+    @include xxl {
+        grid-template-areas:
+        ". . . contact contact contact contact contact contact . . .";
+    }
+
+    @include xxxl {
+        grid-template-areas:
+        ". . . . contact contact contact contact . . . .";
+    }
+    
+    &__container {
+        grid-area: contact;
+
+        p {
+            line-height: 1.5;
+        }
+
+        hr {
+            color: var(--colour-brown);
+        }
+    }
+
+    &__heading {
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    &__text {
+        margin: 1rem 0;
+    }
+}
+
+/* Form Messages Container styling */
+
+.success {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #468847;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+  }
+  
+  .error {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #b94a48;
+    background-color: #f2dede;
+    border: 1px solid rgba(185, 74, 72, 0.3);
+    border-radius: 4px;
+  }

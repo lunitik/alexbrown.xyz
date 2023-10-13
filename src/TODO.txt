@@ -1,0 +1,13 @@
+[DONE] Make HeroBanner take params to set text.
+[DONE] Make All Components Multi-lingual 
+[DONE] Dark Mode functionality
+[DONE] Dark Mode CSS
+[DONE] Language Selector
+    /en/ or /pl/ etc
+Scroller, stop motion or change direction
+[DONE] Check on en Language locale - doesn't exist only enUS
+CSS for HeroBanner
+Responsive CSS check
+Comment EVERYTHING!!!
+
+Style Experience Scrollbar - double check snap scrolling.

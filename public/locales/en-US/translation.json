@@ -1,0 +1,81 @@
+{
+    "pages" : {},
+    "components" : {
+        "footer" : {
+            "footer__sign-off--start" : "made with",
+            "footer__sign-off--end" : "by me in 2023"
+        },
+        "about" : {
+            "about__heading" : "about me",
+            "about__personalstatement__heading" : "Personal Statement",
+            "about__personalstatement__text" : "Senior Web Manager / Developer with 18+ years of professional experience in website creation, development and management. In-depth knowledge of Web Design and Development as well as broad knowledge of software and application development accompanied by creative design, analytical and marketing skill sets. Hard working, motivated and passionate technologist with exemplary attendance and time keeping."
+        },
+        "contact-form" : {
+            "contact__heading" : "Complete the form below",
+            "contact__text" : "AWS API Gateway is the endpoint this form POSTs to and it triggers an AWS SNS which in turns sends the contents of the form to me via an email!",
+            "fullname" : "Full Name",
+            "error_fullname" : "Full Name is required.",
+            "email" : "Email Address",
+            "error_email_required" : "Email address is required.",
+            "error_email_invalid" : "Email address must be valid.",
+            "message" : "Message",
+            "message_placeholder": "Enter something here...",
+            "error_message" : "Message is required.",
+            "submit" : "Submit",
+            "required_fields" : "are required fields",
+            "post_success": "Thank you for gettin in touch. Your message should now have been delivered and I will be in touch shortly.",
+            "post_failure" : "Oops! An error occured and your message could not be sent."
+        },
+        "darkmodeselector" : {
+            "dark mode" : "dark mode",
+            "light mode" : "light mode"
+        },
+        "education" : {
+            "education__heading" : "education",
+            "distance_learning" : "distance learning",
+            "september" : "september",
+            "july" : "july",
+            "summer" : "summer"
+        },
+        "navigation" : {
+            "contact" : "Contact",
+            "utilities" : "Utilities"
+        },
+        "experience" : {
+            "experience__heading--skills" : "skills",
+            "primary" : "primary",
+            "auxiliary" : "auxiliary",
+            "experience__heading--programming" : "programming",
+            "experience__heading--software" : "software"
+        },
+        "herobanner" : {
+            "home" : {
+                "herobanner__heading" : "Howdy!, I'm Alex",
+                "herobanner__sub-heading": "Welcome to my personal project. Take a look around."
+            },
+            "contact" : {
+                "herobanner__heading" : "I'd love to hear from you!",
+                "herobanner__sub-heading" : "Thinking of hiring me or just want to ask a question?"
+            }
+        },
+        "languageselector" : {
+            "label-language" : "language"
+        },
+        "interestsscroller" : {
+            "interests__heading" : "Hobbies & Interests",
+            "technology" : "technology",
+            "building computers" : "building computers",
+            "web design" : "web design",
+            "development" : "development",
+            "gaming" : "gaming",
+            "learning" : "learning",
+            "cooking" : "cooking",
+            "parenting" : "parenting",
+            "photography" : "photography",
+            "sci-fi" : "sci-fi",
+            "pool_snooker" : "pool / snooker",
+            "music" : "music",
+            "guitar" : "guitar"
+        }
+    }    
+}

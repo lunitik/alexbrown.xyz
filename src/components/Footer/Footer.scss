@@ -1,0 +1,64 @@
+#site-footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #604c45;
+    background-color: var(--colour-brown);
+    border-top: 1px solid #000;
+    min-height: 1.5rem;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 10rem;
+    row-gap: 1rem;
+}
+
+.footer {
+    &__social-media {
+        & a {
+            color: var(--colour-light-grey);
+            transition: color 200ms ease-in-out;
+
+            &:hover, &:focus {
+                color: var(--colour-black);
+            }
+        }
+        
+        & > a > svg {
+            margin-right: 1rem;
+        }
+        
+        & > a:nth-of-type(even):before {
+            display: inline-block;
+            content: "|";
+            margin: 0 0.5rem;
+            color: var(--colour-black);
+
+            &:hover {
+                color: var(--colour-black);
+            }
+        }
+    }
+
+    &__sign-off {
+        margin: 0;
+        color: var(--colour-black);
+
+        svg {
+            border-radius: 50%;
+            transition: color 200ms ease-in-out;
+        }
+
+        svg:hover,
+        svg:focus {
+            color: var(--colour-red);
+            animation: rotateAnimation 1s linear infinite;
+        }
+    }
+  }
+
+  @keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}

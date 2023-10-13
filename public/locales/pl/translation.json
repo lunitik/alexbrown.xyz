@@ -1,0 +1,81 @@
+{
+    "pages" : {},
+    "components" : {
+        "footer" : {
+            "footer__sign-off--start" : "wykonane z",
+            "footer__sign-off--end" : "przeze mnie w 2023 roku"
+        },
+        "about" : {
+            "about__heading" : "0 mnie",
+            "about__personalstatement__heading" : "Oświadczenie osobiste",
+            "about__personalstatement__text" : "Starszy Web Manager/Programista z ponad 18-letnim doświadczeniem zawodowym w tworzeniu, rozwoju i zarządzaniu stronami internetowymi. Dogłębna wiedza na temat projektowania i tworzenia stron internetowych, a także szeroka wiedza na temat tworzenia oprogramowania i aplikacji, połączona z kreatywnym zestawem umiejętności projektowych, analitycznych i marketingowych. Ciężko pracujący, zmotywowany i pełen pasji technolog, charakteryzujący się wzorową frekwencją i terminowością."
+        },
+        "contact-form" : {
+            "contact__heading" : "Wypełnij poniższy formularz",
+            "contact__text" : "AWS API Gateway to punkt końcowy, do którego ten formularz wysyła POST i uruchamia AWS SNS, który z kolei wysyła do mnie zawartość formularza e-mailem!",
+            "fullname" : "Pełne imię i nazwisko",
+            "error_fullname" : "Wymagane jest pełne imię i nazwisko.",
+            "email" : "Adres e-mail",
+            "error_email_required" : "Adres e-mail jest wymagany i musi być ważny.",
+            "error_email_invalid" : "Adres e-mail musi być ważny.",
+            "message" : "Wiadomość",
+            "message_placeholder": "Wpisz coś tutaj...",
+            "error_message" : "Wiadomość jest wymagana.",
+            "submit" : "Składać",
+            "required_fields" : "są polami wymaganymi",
+            "post_success": "Dziękuję za kontakt. Twoja wiadomość powinna już zostać dostarczona. Wkrótce się z Tobą skontaktuję.",
+            "post_failure" : "Ups! Wystąpił błąd i Twoja wiadomość nie mogła zostać wysłana."
+        },
+        "darkmodeselector" : {
+            "dark mode" : "tryb ciemny",
+            "light mode" : "tryb świetlny"
+        },
+        "education" : {
+            "education__heading" : "Edukacja",
+            "distance_learning" : "nauka na odległość",
+            "september" : "wrzesień",
+            "july" : "lipiec",
+            "summer" : "lato"
+        },
+        "navigation" : {
+            "contact" : "Kontakt",
+            "utilities" : "Narzędzia"
+        },
+        "experience" : {
+            "experience__heading--skills" : "umiejętności",
+            "primary" : "podstawowy",
+            "auxiliary" : "pomocniczy",
+            "experience__heading--programming" : "programowanie",
+            "experience__heading--software" : "oprogramowanie"
+        },
+        "herobanner" : {
+            "home" : {
+                "herobanner__heading" : "Cześć! Jestem Alex",
+                "herobanner__sub-heading" : "Witam w moim osobistym projekcie. Rozejrzyj się."
+            },
+            "contact" : {
+                "herobanner__heading" : "Bardzo chciałbym to usłyszeć od ciebie!",
+                "herobanner__sub-heading" : "Myślisz o zatrudnieniu mnie lub po prostu chcesz zadać pytanie?"
+            }
+        },
+        "languageselector" : {
+            "label-language" : "język"
+        },
+        "interestsscroller" : {
+            "interests__heading" : "Hobby i zainteresowania",
+            "technology" : "technologia",
+            "building computers" : "budowanie komputerów",
+            "web design" : "projektowanie stron",
+            "development" : "rozwój",
+            "gaming" : "hazard",
+            "learning" : "uczenie się",
+            "cooking" : "gotowanie",
+            "parenting" : "rodzicielstwo",
+            "photography" : "fotografia",
+            "sci-fi" : "science-fiction",
+            "pool_snooker" : "pool / snooker",
+            "music" : "muzyka",
+            "guitar" : "gitara"
+        }
+    }    
+}
