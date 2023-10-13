@@ -9,12 +9,13 @@ import Root from "./components/Root";
 import "./App.scss";
 import MUIWrapper from "./context/MUIWrapper";
 import Loading from "./components/Loading/Loading";
+const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Root />}>
+    <Route element={<Root />} errorElement={<PageNotFound/>}>
       <Route path="/" element={<Home />} />
       <Route path="contact" element={<Contact />} />
     </Route>
@@ -26,8 +27,7 @@ function App() {
     <Suspense fallback={<Loading />}>
       <MUIWrapper>
         <RouterProvider router={router} />
-      </MUIWrapper>    
-
+      </MUIWrapper>
     </Suspense> 
   );
 }
