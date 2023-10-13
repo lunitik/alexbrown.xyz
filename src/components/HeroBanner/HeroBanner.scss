@@ -1,3 +1,5 @@
+@import '../../assets/scss/index.scss';
+
 .herobanner {
     &__container {
         position: relative;
@@ -13,12 +15,17 @@
         flex-direction: column;
         max-width: 100%;
         width: 100%;
-        padding: 4rem 0 1rem 0;
+        padding: 1rem;
         min-height: 500px;
         z-index: auto;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         text-align: center;
+        
+        @include large {
+          justify-content: flex-start;
+          padding: 4rem 1rem 1rem 1rem;
+        }
 
         &-colour-mode {
           &--dark {
@@ -41,12 +48,6 @@
 
     &__background {
       background: var(--colour-turquoise);
-      background: linear-gradient(
-        120deg,
-        var(--colour-turquoise) 0%,
-        var(--colour-light-blue) 50%,
-        var(--colour-grey) 100%
-      );
       position: absolute;
       top: 0;
       bottom: 0;
@@ -60,12 +61,6 @@
 
       &[data-color-mode="dark"] {
         background: var(--colour-brown);
-        background: linear-gradient(
-          120deg,
-          var(--colour-black) 0%,
-          var(--colour-light-black) 50%,
-          var(--colour-dark-grey) 100%
-        );
       }
     }
 }
