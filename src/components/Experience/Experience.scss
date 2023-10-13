@@ -32,7 +32,11 @@
     }
 
     &__heading {
-        text-wrap: nowrap;
+        text-wrap: wrap;
+
+        @include medium {
+            text-wrap: nowrap;
+        }
 
         svg {
             margin-right: 1rem;
@@ -99,6 +103,12 @@
     
     .lists {
         display: flex;
+        flex-direction: column;
+
+        @include medium {
+            flex-direction: row;
+        }
+
         li {
             line-height: 1.5;
             

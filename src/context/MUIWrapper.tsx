@@ -2,6 +2,7 @@ import {
   createTheme,
   CssBaseline,
   PaletteMode,
+  responsiveFontSizes,
   ThemeProvider,
   useMediaQuery,
 } from "@mui/material";
@@ -48,7 +49,7 @@ export default function MUIWrapper({
 
   const theme = useMemo(
     () =>
-      createTheme({
+    responsiveFontSizes(createTheme({
         palette: {
           mode,
         },
@@ -59,7 +60,7 @@ export default function MUIWrapper({
           ].join(','),
         }
       },
-      locale.muiCore),
+      locale.muiCore)),
     [mode, locale]
   );
 
