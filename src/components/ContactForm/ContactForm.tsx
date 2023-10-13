@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import "./ContactForm.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
@@ -71,95 +71,93 @@ function ContactForm() {
     }
   }, [formState, reset]);
 
-  return (
-    <Suspense fallback="loading">
-      <section className={colourModeClasses} id="contact-form">
-        <div className="contact__container">
-          <h2 className="contact__heading">
-            <FontAwesomeIcon icon={faAt} />
-            {t("contact__heading")}
-          </h2>
-          <p className="contact__text">{t("contact__text")}</p>
-          <hr />
-          <div
-            id="form-messages"
-            className={messageData == "" ? "" : isError ? "error" : "success"}
-          >
-            {messageData}
-          </div>
-          <form
-            className="pure-form pure-form-aligned"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <fieldset>
-              <div className="pure-control-group">
-                <label htmlFor="fullname">{t("fullname")}</label>
-                <input
-                  id="fullname"
-                  type="text"
-                  placeholder={t("fullname")}
-                  {...register("fullname", { required: true })}
-                  required
-                />
-                {errors.fullname && (
-                  <p className="pure-form-message-inline">
-                    {t("error_fullname")}
-                  </p>
-                )}
-                <span className="pure-form-message-inline">*</span>
-              </div>
-
-              <div className="pure-control-group">
-                <label htmlFor="email">{t("email")}</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder={t("email")}
-                  {...register("email", {
-                    required: true,
-                    pattern: emailValidation,
-                  })}
-                  required
-                />
-                {errors.email && (
-                  <p className="pure-form-message-inline">{t("error_email")}</p>
-                )}
-                <span className="pure-form-message-inline">*</span>
-              </div>
-
-              <div className="pure-control-group">
-                <label htmlFor="message">{t("message")}</label>
-                <textarea
-                  id="message"
-                  rows={3}
-                  placeholder={t("message_placeholder")}
-                  {...register("message", { required: true })}
-                  required
-                ></textarea>
-                {errors.message && (
-                  <p className="pure-form-message-inline">
-                    {t("error_message")}
-                  </p>
-                )}
-                <span className="pure-form-message-inline">*</span>
-              </div>
-
-              <div className="pure-controls">
-                <button
-                  type="submit"
-                  className="pure-button pure-button-primary"
-                >
-                  {t("submit")}
-                </button>
-                <span className="pure-form-message-inline">
-                  * {t("required_fields")}
-                </span>
-              </div>
-            </fieldset>
-          </form>
+  return (    
+    <section className={colourModeClasses} id="contact-form">
+      <div className="contact__container">
+        <h2 className="contact__heading">
+          <FontAwesomeIcon icon={faAt} />
+          {t("contact__heading")}
+        </h2>
+        <p className="contact__text">{t("contact__text")}</p>
+        <hr />
+        <div
+          id="form-messages"
+          className={messageData == "" ? "" : isError ? "error" : "success"}
+        >
+          {messageData}
         </div>
-      </section>
-    </Suspense>
+        <form
+          className="pure-form pure-form-aligned"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <fieldset>
+            <div className="pure-control-group">
+              <label htmlFor="fullname">{t("fullname")}</label>
+              <input
+                id="fullname"
+                type="text"
+                placeholder={t("fullname")}
+                {...register("fullname", { required: true })}
+                required
+              />
+              {errors.fullname && (
+                <p className="pure-form-message-inline">
+                  {t("error_fullname")}
+                </p>
+              )}
+              <span className="pure-form-message-inline">*</span>
+            </div>
+
+            <div className="pure-control-group">
+              <label htmlFor="email">{t("email")}</label>
+              <input
+                id="email"
+                type="email"
+                placeholder={t("email")}
+                {...register("email", {
+                  required: true,
+                  pattern: emailValidation,
+                })}
+                required
+              />
+              {errors.email && (
+                <p className="pure-form-message-inline">{t("error_email")}</p>
+              )}
+              <span className="pure-form-message-inline">*</span>
+            </div>
+
+            <div className="pure-control-group">
+              <label htmlFor="message">{t("message")}</label>
+              <textarea
+                id="message"
+                rows={3}
+                placeholder={t("message_placeholder")}
+                {...register("message", { required: true })}
+                required
+              ></textarea>
+              {errors.message && (
+                <p className="pure-form-message-inline">
+                  {t("error_message")}
+                </p>
+              )}
+              <span className="pure-form-message-inline">*</span>
+            </div>
+
+            <div className="pure-controls">
+              <button
+                type="submit"
+                className="pure-button pure-button-primary"
+              >
+                {t("submit")}
+              </button>
+              <span className="pure-form-message-inline">
+                * {t("required_fields")}
+              </span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>    
   );
 }
 

@@ -1,14 +1,16 @@
+import { Suspense, lazy } from "react";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Contact from "./pages/Contact/Contact";
 import Root from "./components/Root";
 import "./App.scss";
 import MUIWrapper from "./context/MUIWrapper";
+import Loading from "./components/Loading/Loading";
+const Home = lazy(() => import("./pages/Home/Home"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,10 +22,13 @@ const router = createBrowserRouter(
 );
 
 function App() {
-  return ( 
-    <MUIWrapper>
-      <RouterProvider router={router} />
-    </MUIWrapper>     
+  return (
+    <Suspense fallback={<Loading />}>
+      <MUIWrapper>
+        <RouterProvider router={router} />
+      </MUIWrapper>    
+
+    </Suspense> 
   );
 }
 

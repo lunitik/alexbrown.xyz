@@ -2,7 +2,7 @@ import "./DarkModeSelector.scss";
 import { FormGroup, FormControlLabel, Switch } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { MUIWrapperContext } from "../../context/MUIWrapper";
-import React, { Suspense } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 function DarkModeSelector() {
@@ -16,15 +16,13 @@ function DarkModeSelector() {
   };
 
   return (
-    <Suspense fallback="loading">
-      <FormGroup>
-        <FormControlLabel
-          control={<Switch onChange={handleChange} id="themeModeSelector" sx={{ m: 1 }} />}
-          label={t(`${themeLabel}`)}
-          labelPlacement="start" 
-        />
-      </FormGroup>
-    </Suspense>
+    <FormGroup>
+      <FormControlLabel
+        control={<Switch onChange={handleChange} id="themeModeSelector" sx={{ m: 1 }} />}
+        label={t(`${themeLabel}`)}
+        labelPlacement="start" 
+      />
+    </FormGroup>
   );
 }
 

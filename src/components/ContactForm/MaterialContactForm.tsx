@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Stack, TextField, Typography, useTheme } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import axios from "axios";
-import { Suspense, useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "./ContactForm.scss";
 import { useForm } from "react-hook-form";
@@ -87,66 +87,64 @@ function MaterialContactForm() {
   };
 
   return (
-    <Suspense fallback="loading">
-      <section className={contactColourModeClass} id="contact-form">
-        <div className="contact__container">
-          <Typography variant="h2" className="contact__heading">
-            <FontAwesomeIcon icon={faAt} />
-            {t("contact__heading")}
-          </Typography>
-          <p className="contact__text">{t("contact__text")}</p>
-          <hr />
-          <div
-            id="form-messages"
-            className={messageData == "" ? "" : isError ? "error" : "success"}
-          >
-            {messageData}
-          </div>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <Stack spacing={2}>
-              <TextField
-                required
-                fullWidth
-                id="fullname"
-                label={t("fullname")}
-                {...register("fullname")}
-                error={errors.fullname ? true : false}
-                helperText={errors.fullname?.message as string}
-              />
-              <TextField
-                required
-                fullWidth
-                id="email"
-                label={t("email")}
-                {...register("email")}
-                error={errors.email ? true : false}
-                helperText={errors.email?.message as string}
-              />
-              <TextField
-                required
-                id="message"
-                label={t("message")}
-                {...register("message")}
-                multiline
-                minRows={4}
-                defaultValue={t("message_placeholder")}
-                error={errors.message ? true : false}
-                helperText={errors.message?.message as string}
-              />
-              <LoadingButton
-                type="submit"
-                endIcon={<FontAwesomeIcon icon={faPaperPlane} />}
-                loading={isSubmitting}
-                loadingPosition="end"
-                variant="contained"
-              >
-                <span>{t("submit")}</span>
-              </LoadingButton>
-            </Stack>
-          </form>
+    <section className={contactColourModeClass} id="contact-form">
+      <div className="contact__container">
+        <Typography variant="h2" className="contact__heading">
+          <FontAwesomeIcon icon={faAt} />
+          {t("contact__heading")}
+        </Typography>
+        <p className="contact__text">{t("contact__text")}</p>
+        <hr />
+        <div
+          id="form-messages"
+          className={messageData == "" ? "" : isError ? "error" : "success"}
+        >
+          {messageData}
         </div>
-      </section>
-    </Suspense>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <Stack spacing={2}>
+            <TextField
+              required
+              fullWidth
+              id="fullname"
+              label={t("fullname")}
+              {...register("fullname")}
+              error={errors.fullname ? true : false}
+              helperText={errors.fullname?.message as string}
+            />
+            <TextField
+              required
+              fullWidth
+              id="email"
+              label={t("email")}
+              {...register("email")}
+              error={errors.email ? true : false}
+              helperText={errors.email?.message as string}
+            />
+            <TextField
+              required
+              id="message"
+              label={t("message")}
+              {...register("message")}
+              multiline
+              minRows={4}
+              defaultValue={t("message_placeholder")}
+              error={errors.message ? true : false}
+              helperText={errors.message?.message as string}
+            />
+            <LoadingButton
+              type="submit"
+              endIcon={<FontAwesomeIcon icon={faPaperPlane} />}
+              loading={isSubmitting}
+              loadingPosition="end"
+              variant="contained"
+            >
+              <span>{t("submit")}</span>
+            </LoadingButton>
+          </Stack>
+        </form>
+      </div>
+    </section>
   );
 }
 
