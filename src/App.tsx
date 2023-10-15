@@ -9,6 +9,7 @@ import Root from "./components/Root";
 import "./App.scss";
 import MUIWrapper from "./context/MUIWrapper";
 import Loading from "./components/Loading/Loading";
+import { HelmetProvider } from 'react-helmet-async';
 const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
@@ -24,11 +25,13 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <MUIWrapper>
-        <RouterProvider router={router} />
-      </MUIWrapper>
-    </Suspense> 
+    <HelmetProvider>
+      <Suspense fallback={<Loading />}>
+        <MUIWrapper>
+          <RouterProvider router={router} />
+        </MUIWrapper>
+      </Suspense>
+    </HelmetProvider>
   );
 }
 

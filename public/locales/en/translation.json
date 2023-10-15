@@ -1,5 +1,21 @@
 {
-    "pages" : {},
+    "pages" : {
+        "home" : {
+            "title": "Web Development - A Personal Project | alexbrown.xyz",
+            "description": "the personal project site by developer Alex Brown. A Poland based UK native web developer, Alex has worked in web development and e-commerce for nearly two decades.",
+            "type": "",
+            "name": "Alex Brown",
+            "keywords": ["alex", "alexbrown", "project", "AWS", "senior web developer"]
+        },
+        "contact" : {
+            "title": "Hire me! | alexbrown.xyz",
+            "description": "I'm open to work. If you're looking and want to discuss how we can work together, complete this form and get in touch.",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/contact",
+            "keywords": ["hire web developer", "contact web developer", "speak to a developer"]
+        }
+    },
     "components" : {
         "footer" : {
             "footer__sign-off--start" : "made with",

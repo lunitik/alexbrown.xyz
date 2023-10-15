@@ -1,25 +1,30 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta author="alexbrown">
-	<meta name="keywords" content="alex, alexbrown, project, AWS, senior web developer">
-	<meta name="description" content="alexbrown.xyz is the personal project site by developer Alex Brown. A Poland based UK native web developer, Alex has worked in web development and e-commerce for nearly two decades.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Web Development - A Personal Project | alexbrown.xyz</title>
-	<link rel="canonical" href="https://www.alexbrown.xyz">
-	<link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
-	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
-	<style>.loading {display: inline-block;width: 175px;height: 175px;}.loading:after {content: " ";display: block;width: 150px;height: 150px;margin: 8px;border-radius: 50%;border: 6px solid #000;border-color: #000 transparent #000 transparent;animation: lds-dual-ring 1.2s linear infinite;} @keyframes lds-dual-ring {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}</style>
-  </head>
-  <body>
-    <div id="root">
-		<div class="full-page-loader" style="display: flex;align-items: center;flex-direction: column;justify-content: center;position: absolute;top: 0;right: 0;left: 0;bottom: 0;">
-			<div class="loading">
-				<span style="position: absolute; top:50%; transform: translate(-50%, -50%); left: 50%;">Downloading...</span>
-			</div>
-		  </div>
-	</div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<!DOCTYPE html>
+<div id="root">
+    <div
+        class="full-page-loader"
+        style="
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        "
+    >
+        <div class="loading">
+            <span
+                style="
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                "
+                >Downloading...</span
+            >
+        </div>
+    </div>
+</div>
+<script type="module" src="/src/main.tsx"></script>

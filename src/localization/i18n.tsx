@@ -21,8 +21,11 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     fallbackLng: 'en',
-    debug: false,
-
+    debug: process.env.NODE_ENV === 'development',
+    backend: {
+      load: 'languageOnly'
+    },
+    returnObjects: true,
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     }
