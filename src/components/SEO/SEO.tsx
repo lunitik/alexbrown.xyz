@@ -19,7 +19,7 @@ export const Seo = (props: { pageKey: string }) => {
   return (
     <Helmet
         prioritizeSeoTags
-        htmlAttributes={{"lang" : `${currentLanguage}`}}>
+        htmlAttributes={{"lang" : `${currentLanguageObect?.details.locale}`}}>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{title}</title>

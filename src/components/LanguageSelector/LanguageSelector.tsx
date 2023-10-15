@@ -13,8 +13,9 @@ import {
   MUILocaleData,
   supportedLocales,
 } from "../../localization/SupportedLocales";
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import { updateBrowserLocation } from "../../features/onLanguageChange";
+import i18n from "../../localization/i18n";
 
 function LanguageSelector() {
   const theme = useTheme();
@@ -38,8 +39,7 @@ function LanguageSelector() {
               label="language"
               onChange={(event: SelectChangeEvent<MUILocaleData>) => {
                 const data = event.target.value;
-                muiUtils.setLocale(data as MUILocaleData);
-                i18next.changeLanguage((data as MUILocaleData).lng);
+                updateBrowserLocation(i18n.language, (data as MUILocaleData).lng);
               }}
             >
               {supportedLocales.map((item) => {

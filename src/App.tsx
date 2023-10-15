@@ -17,8 +17,15 @@ const Contact = lazy(() => import("./pages/Contact/Contact"));
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Root />} errorElement={<PageNotFound/>}>
+      {/* 'en' routes */}
       <Route path="/" element={<Home />} />
       <Route path="contact" element={<Contact />} />
+      {/* 'en-US' routes */}
+      <Route path="/en-us/" element={<Home />} />
+      <Route path="/en-us/contact" element={<Contact />} />
+      {/* 'pl-pl' routes */}
+      <Route path="/pl-pl/" element={<Home />} />
+      <Route path="/pl-pl/kontakt" element={<Contact />} />
     </Route>
   )
 );
