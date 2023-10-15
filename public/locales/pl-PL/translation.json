@@ -1,5 +1,21 @@
 {
-    "pages" : {},
+    "pages" : {
+        "home" : {
+            "title": "Tworzenie stron internetowych — projekt osobisty | alexbrown.xyz",
+            "description": "osobista witryna projektu autorstwa programisty Alexa Browna. Alex, mieszkający w Polsce i mieszkający w Wielkiej Brytanii programista stron internetowych, pracuje w branży tworzenia stron internetowych i handlu elektronicznego od prawie dwudziestu lat.",
+            "type": "",
+            "name": "Alex Brown",
+            "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"]
+        },
+        "contact" : {
+            "title": "Zatrudnij mnie! | alexbrown.xyz",
+            "description": "Jestem otwarty na pracę. Jeśli szukasz i chcesz omówić możliwości współpracy, wypełnij ten formularz i skontaktuj się z nami.",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/contact",
+            "keywords": ["zatrudnij programistę internetowego", "skontaktuj się z twórcą stron internetowych", "porozmawiaj z programistą"]
+        }
+    },
     "components" : {
         "footer" : {
             "footer__sign-off--start" : "wykonane z",
