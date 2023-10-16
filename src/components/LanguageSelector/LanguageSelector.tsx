@@ -14,11 +14,14 @@ import {
   supportedLocales,
 } from "../../localization/SupportedLocales";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { updateBrowserLocation } from "../../features/onLanguageChange";
-import i18n from "../../localization/i18n";
+import { appStrings } from "../../localization/AppLanguages";
+import { LanguageStrings } from "../../localization/localizations/base-strings";
 
 function LanguageSelector() {
   const theme = useTheme();
+  const { pathname } = useLocation();
   const colourModeClasses = `languageselector languageselector-colour-mode-${theme.palette.mode}`;
   const { t } = useTranslation("translation", {
     keyPrefix: "components.languageselector",
@@ -39,7 +42,8 @@ function LanguageSelector() {
               label="language"
               onChange={(event: SelectChangeEvent<MUILocaleData>) => {
                 const data = event.target.value;
-                updateBrowserLocation(i18n.language, (data as MUILocaleData).lng);
+                const targetLang = (data as MUILocaleData).lng;
+                updateBrowserLocation(getMatchingRoute(targetLang));
               }}
             >
               {supportedLocales.map((item) => {
@@ -56,6 +60,41 @@ function LanguageSelector() {
       )}
     </>
   );
+
+  function getMatchingRoute(language: string) {
+      /**
+       * Get the key of the route the user is currently on
+       */
+      const splitpath = pathname.split(muiUtils.locale.lng);
+      const route = splitpath[(splitpath.length - 1)];      
+      let routeKey: string = "";
+      Object.keys(appStrings).forEach(languageKey => {
+        const routes: (LanguageStrings | undefined) = Object.getOwnPropertyDescriptor(appStrings, languageKey)?.value;
+        if ( routes !== undefined ) {
+          for (const [key, value] of Object.entries(routes)) {
+            if (value == route) {
+              routeKey = key;
+            }
+          }
+        }
+      })
+
+      /**
+       * Find the matching route for the new language
+       */
+      const matchingLanguage = Object.getOwnPropertyDescriptor(appStrings, language)?.value;
+      const matchingRoute = Object.getOwnPropertyDescriptor(matchingLanguage, routeKey)?.value;
+
+      /**
+       * handle en as language
+       */
+      const handledLanguage = language == "en" ? matchingRoute : `/${language}` + matchingRoute;
+
+      /**
+       * Return localized route
+       */
+      return handledLanguage;
+    }
 }
 
 export default LanguageSelector;

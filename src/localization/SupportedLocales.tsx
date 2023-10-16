@@ -3,29 +3,30 @@ import {
     plPL as materialLocalePolish,
     Localization,
   } from "@mui/material/locale";
+import { AppLanguage } from "./AppLanguages";
 
   export interface MUILocaleData {
     muiCore: Localization;
     title: string;
-    lng: string;
+    lng: AppLanguage;
   }
 
   const english: MUILocaleData = {
     muiCore: materialLocaleEnglishUS,
     title: "English",
-    lng: "en"
+    lng: AppLanguage.English
   };
 
   const englishUS: MUILocaleData = {
     muiCore: materialLocaleEnglishUS,
     title: "English (United States)",
-    lng: "en-us"
+    lng: AppLanguage.American
   };
 
   const polish: MUILocaleData = {
     muiCore: materialLocalePolish,
     title: "Polska",
-    lng: "pl-pl"
+    lng: AppLanguage.Polish
   };
 
   export const supportedLocales: MUILocaleData[] = [
