@@ -9,9 +9,20 @@ export enum AppRoute {
     Contact = 'routes.contact'
 }
 
-import { en } from './localizations/base-strings';
+import { LanguageStrings, en } from './localizations/base-strings';
 import { enUS } from './localizations/enus';
 import { plPL } from './localizations/plpl';
+
+export type localizations = {
+    [key: string] : LanguageStrings;
+}
+
+const betterLocalizations: localizations = {
+    "en" : en,
+    "en-us" : enUS,
+    "pl-pl" : plPL
+};
+export const betterAppStrings = betterLocalizations;
 
 const localizations = {
     "en" : en,
