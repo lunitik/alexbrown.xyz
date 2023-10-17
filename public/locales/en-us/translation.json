@@ -5,7 +5,15 @@
             "description": "the personal project site by developer Alex Brown. A Poland based UK native web developer, Alex has worked in web development and e-commerce for nearly two decades.",
             "type": "",
             "name": "Alex Brown",
-            "keywords": ["alex", "alexbrown", "project", "AWS", "senior web developer"]
+            "keywords": ["alex", "alexbrown", "project", "AWS", "senior web developer"],
+            "components": {
+                "herobanner" : {
+                    "cta" : {
+                        "primary" : "Hire me!",
+                        "secondary": "learn more..."
+                    }
+                }
+            }
         },
         "contact" : {
             "title": "Hire me! | alexbrown.xyz",

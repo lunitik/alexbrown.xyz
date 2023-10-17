@@ -5,7 +5,15 @@
             "description": "osobista witryna projektu autorstwa programisty Alexa Browna. Alex, mieszkający w Polsce i mieszkający w Wielkiej Brytanii programista stron internetowych, pracuje w branży tworzenia stron internetowych i handlu elektronicznego od prawie dwudziestu lat.",
             "type": "",
             "name": "Alex Brown",
-            "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"]
+            "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"],
+            "components":  {
+                "herobanner" : {
+                    "cta" : {
+                        "primary" : "Zatrudnij mnie!",
+                        "secondary": "ucz się więcej"
+                    }
+                }
+            }
         },
         "contact" : {
             "title": "Zatrudnij mnie! | alexbrown.xyz",

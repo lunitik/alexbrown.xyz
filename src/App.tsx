@@ -14,16 +14,6 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
 
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route element={<Root />} errorElement={<PageNotFound/>}>
-//       {<LocalizedSwitch>
-//         <Route path="/" element={<Home />} />
-//         <Route path="contact" element={<Contact />} />
-//       </LocalizedSwitch>}
-//     </Route>
-//   )
-// );
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Root />} errorElement={<PageNotFound/>}>

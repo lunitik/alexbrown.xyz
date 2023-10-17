@@ -59,7 +59,7 @@ function NavigationMenu() {
             </Typography>
             <Divider />
             <List className="navigationmenu__drawer__nav">
-                <NavLink className={``} to={contactLink}>
+                <NavLink to={contactLink}>
                     <Typography variant="body1">{t("contact")}</Typography>
                 </NavLink>
             </List>

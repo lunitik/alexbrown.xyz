@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './Logo.scss';
 import { useTheme } from "@mui/material";
 import React from "react";
@@ -16,9 +16,9 @@ function Logo() {
 
     return (
         <div id="logo" className={colorMode}>
-			<NavLink to={contactLink}>
+			<Link to={contactLink}>
                 <span className="logo--start animated infinite">alex</span><span className="logo--end">brown.xyz</span>
-            </NavLink>
+            </Link>
 		</div>
     )
 }
