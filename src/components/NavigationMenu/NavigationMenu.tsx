@@ -18,7 +18,7 @@ import { MenuButton } from '@mui/base/MenuButton';
 import { MenuItem } from '@mui/base/MenuItem';
 import { Menu } from '@mui/base/Menu';
 import { useTranslation } from "react-i18next";
-import { Suspense, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { MUIWrapperContext } from "../../context/MUIWrapper";
