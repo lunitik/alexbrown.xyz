@@ -55,7 +55,8 @@
         },
         "navigation" : {
             "contact" : "Kontakt",
-            "utilities" : "Narzędzia"
+            "utilities" : "Narzędzia",
+            "menu" : "Badać"
         },
         "experience" : {
             "experience__heading--skills" : "umiejętności",
