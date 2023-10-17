@@ -55,7 +55,8 @@
         },
         "navigation" : {
             "contact" : "Contact",
-            "utilities" : "Utilities"
+            "utilities" : "Utilities",
+            "menu" : "Explore"
         },
         "experience" : {
             "experience__heading--skills" : "skills",

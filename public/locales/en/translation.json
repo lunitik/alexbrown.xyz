@@ -48,7 +48,8 @@
         },
         "navigation" : {
             "contact" : "Contact",
-            "utilities" : "Utilities"
+            "utilities" : "Utilities",
+            "menu" : "Explore"
         },
         "education" : {
             "education__heading" : "education",
