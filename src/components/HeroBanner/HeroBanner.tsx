@@ -11,7 +11,7 @@ import {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function HeroBanner(props: {
     pageKey: string;
-    children:
+    children?:
         | string
         | number
         | boolean
@@ -37,11 +37,6 @@ function HeroBanner(props: {
                 {t("herobanner__sub-heading")}
             </Typography>
             <Container className="herobanner__container--content" maxWidth="sm">{props.children}</Container>
-            <div
-                className="herobanner__background"
-                data-color-mode={theme.palette.mode}
-                aria-hidden="true"
-            ></div>
         </section>
     );
 }

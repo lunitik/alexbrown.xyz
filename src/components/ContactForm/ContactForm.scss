@@ -6,7 +6,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0px 0px;
-    
+    padding-bottom: 15rem;
     
     @include small {
         grid-template-areas: 
@@ -31,6 +31,12 @@
     @include xxxl {
         grid-template-areas:
         ". . . . contact contact contact contact . . . .";
+    }
+
+    &-colour-mode {
+        &--dark {
+            background-color: var(--colour-black);
+        }
     }
     
     &__container {

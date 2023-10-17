@@ -8,6 +8,7 @@ import React from 'react';
 import { MUIWrapperContext } from '../../context/MUIWrapper';
 import { AppRoute } from '../../localization/AppLanguages';
 import { getPathFromCurrentLanguage } from '../../localization/languageHelpers';
+import PageBackground from '../../components/PageBackground/PageBackground';
 const HeroBanner = lazy(() => import('../../components/HeroBanner/HeroBanner'));
 const About = lazy(() => import ('../../components/About/About'));
 const Experience = lazy(() => import('../../components/Experience/Experience'));
@@ -33,6 +34,7 @@ function Home() {
             <About />
             <Experience />
             <Education />
+            <PageBackground />
         </Suspense>
     );
 }

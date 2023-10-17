@@ -12,7 +12,7 @@ import * as Yup from "yup";
 
 function MaterialContactForm() {
   const theme = useTheme();
-  const contactColourModeClass = `contact contact-colour-more--${theme.palette.mode}`;
+  const contactColourModeClass = `contact contact-colour-mode--${theme.palette.mode}`;
   const { t } = useTranslation("translation", {
     keyPrefix: "components.contact-form",
   });
