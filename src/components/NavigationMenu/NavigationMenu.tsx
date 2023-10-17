@@ -52,6 +52,10 @@ function NavigationMenu() {
         getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Contact)
     );
 
+    const blogsLink = (
+        getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Blogs)
+    );
+
     const drawer = (
         <Box className="navigationmenu__drawer" onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
@@ -61,6 +65,9 @@ function NavigationMenu() {
             <List className="navigationmenu__drawer__nav">
                 <NavLink to={contactLink}>
                     <Typography variant="body1">{t("contact")}</Typography>
+                </NavLink>
+                <NavLink to={blogsLink}>
+                    <Typography variant="body1">{t("blogs")}</Typography>
                 </NavLink>
             </List>
             <List className="navigationmenu__drawer__list">
@@ -96,6 +103,9 @@ function NavigationMenu() {
                         <MenuItem>
                             <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={contactLink}>
                                 <Typography variant="body1">{t("contact")}</Typography>
+                            </NavLink>
+                            <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={blogsLink}>
+                                <Typography variant="body1">{t("blogs")}</Typography>
                             </NavLink>
                         </MenuItem>
                     </Menu>

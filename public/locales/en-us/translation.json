@@ -22,6 +22,14 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/contact",
             "keywords": ["hire web developer", "contact web developer", "speak to a developer"]
+        },
+        "blogs" : {
+            "title": "Learn more... | alexbrown.xyz",
+            "description": "Learn more about my development work through a series of blog articles.",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/blogs",
+            "keywords": ["blogs from a web developer"]
         }
     },
     "components" : {
@@ -63,6 +71,7 @@
         },
         "navigation" : {
             "contact" : "Contact",
+            "blogs" : "Blogs",
             "utilities" : "Utilities",
             "menu" : "Explore"
         },
@@ -81,6 +90,10 @@
             "contact" : {
                 "herobanner__heading" : "I'd love to hear from you!",
                 "herobanner__sub-heading" : "Thinking of hiring me or just want to ask a question?"
+            },
+            "blogs" : {
+                "herobanner__heading" : "Learn more through these articles",
+                "herobanner__sub-heading" : "search through a series of articles where I discuss various aspects of building this site"
             }
         },
         "languageselector" : {
@@ -101,6 +114,9 @@
             "pool_snooker" : "pool / snooker",
             "music" : "music",
             "guitar" : "guitar"
+        },
+        "comingsoon" : {
+            "heading" : "Coming Soon"
         }
     }    
 }

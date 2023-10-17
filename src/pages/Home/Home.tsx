@@ -20,8 +20,8 @@ function Home() {
     const primaryLink = (
         getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Contact)
     );
-    const contactLink = (
-        getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Contact)
+    const secondaryLink = (
+        getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Blogs)
     );
 
     return (
@@ -29,7 +29,7 @@ function Home() {
             <Seo pageKey='home'/>
             <HeroBanner pageKey='home'>
                 <Button className="herobanner__cta--primary" variant="contained" size="large"><Link to={primaryLink}>{t("cta.primary")}</Link></Button>
-                <Button className="herobanner__cta--secondary" variant="outlined" size="large"><Link to={contactLink}>{t("cta.secondary")}</Link></Button>
+                <Button className="herobanner__cta--secondary" variant="outlined" size="large"><Link to={secondaryLink}>{t("cta.secondary")}</Link></Button>
             </HeroBanner>
             <About />
             <Experience />
