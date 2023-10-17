@@ -5,7 +5,15 @@
             "description": "osobista witryna projektu autorstwa programisty Alexa Browna. Alex, mieszkający w Polsce i mieszkający w Wielkiej Brytanii programista stron internetowych, pracuje w branży tworzenia stron internetowych i handlu elektronicznego od prawie dwudziestu lat.",
             "type": "",
             "name": "Alex Brown",
-            "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"]
+            "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"],
+            "components":  {
+                "herobanner" : {
+                    "cta" : {
+                        "primary" : "Zatrudnij mnie!",
+                        "secondary": "ucz się więcej"
+                    }
+                }
+            }
         },
         "contact" : {
             "title": "Zatrudnij mnie! | alexbrown.xyz",
@@ -14,6 +22,14 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/contact",
             "keywords": ["zatrudnij programistę internetowego", "skontaktuj się z twórcą stron internetowych", "porozmawiaj z programistą"]
+        },
+        "blogs" : {
+            "title": "Ucz się więcej... | alexbrown.xyz",
+            "description": "Dowiedz się więcej o mojej pracy programistycznej z serii artykułów na blogu.",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/blogs",
+            "keywords": ["blogi od twórcy stron internetowych"]
         }
     },
     "components" : {
@@ -55,6 +71,7 @@
         },
         "navigation" : {
             "contact" : "Kontakt",
+            "blogs" : "Blogi",
             "utilities" : "Narzędzia",
             "menu" : "Badać"
         },
@@ -73,6 +90,10 @@
             "contact" : {
                 "herobanner__heading" : "Bardzo chciałbym to usłyszeć od ciebie!",
                 "herobanner__sub-heading" : "Myślisz o zatrudnieniu mnie lub po prostu chcesz zadać pytanie?"
+            },
+            "blogs" : {
+                "herobanner__heading" : "Dowiedz się więcej z tych artykułów",
+                "herobanner__sub-heading" : "przeszukaj serię artykułów, w których omawiam różne aspekty tworzenia tej witryny"
             }
         },
         "languageselector" : {
@@ -93,6 +114,9 @@
             "pool_snooker" : "pool / snooker",
             "music" : "muzyka",
             "guitar" : "gitara"
+        },
+        "comingsoon" : {
+            "heading" : "Wkrótce"
         }
     }    
 }

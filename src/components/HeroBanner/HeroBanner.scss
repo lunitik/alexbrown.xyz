@@ -1,4 +1,4 @@
-@import '../../assets/scss/index.scss';
+@import "../../assets/scss/index.scss";
 
 .herobanner {
     &__container {
@@ -16,62 +16,125 @@
         max-width: 100%;
         width: 100%;
         padding: 1rem;
-        min-height: 500px;
+        min-height: 85vh;
         z-index: auto;
         align-items: center;
         justify-content: center;
         text-align: center;
-        
+        overflow: hidden;
+        background-color: transparent;
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 87.5%;
+            transform: skewY(6deg);
+        }
+
         @include large {
-          justify-content: flex-start;
-          padding: 4rem 1rem 1rem 1rem;
+            justify-content: center;
+            padding: 4rem 1rem 1rem 1rem;
         }
 
         &-colour-mode {
-          &--dark {
-            h1, h2, h3, h4, h5, h6 {
-              color: var(--colour-light-grey);
-            }
-          }
+            &--dark {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: var(--colour-light-grey);
+                }
 
-          &--light {
-            h1, h2, h3, h4, h5, h6 {
-              color: var(--colour-brown);
+                &::before {
+                    background-color: var(--colour-black);
+                }
+
+                .herobanner {
+                    &__cta {
+                        &--primary {
+                            background-color: var(--colour-black);
+                        }
+
+                        &--secondary {
+                            border-color: var(--colour-light-grey);
+
+                            a {
+                                color: var(--colour-light-grey);
+                            }
+
+                            &:hover,
+                            &:focus {
+                                a {
+                                    color: var(--colour-light-green);
+                                }
+                            }
+                        }
+                    }
+                }
             }
-          }
+
+            &--light {
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: var(--colour-brown);
+                }
+
+                &::before {
+                    background-color: var(--colour-white);
+                }
+            }
+        }
+
+        &--content {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
         }
     }
-    
-    &__heading {
-      margin-top: 5rem;
-    }
 
-    &__background {
-      background: var(--colour-turquoise);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform: skewY(6deg);
-      transform-origin: top right;
-      z-index: -1;
-      opacity: 0.5;
+    &__cta {
+        &--primary {
+            background-color: var(--colour-brown);
+            a {
+                color: var(--colour-light-grey);
+            }
 
-      &::before {
-        display: block;
-        content: '';
-        height: 100%;
-        width: 100%;
-        background-image: radial-gradient(circle at bottom right, var(--colour-light-grey), var(--colour-turquoise)), repeating-radial-gradient(circle at bottom right, var(--colour-light-grey), var(--colour-light-grey), 10px, transparent 20px, transparent 10px);
-        background-blend-mode: multiply;
-      }
-      
-      &[data-color-mode="dark"] {
-        background: var(--colour-brown);
-        background-image: radial-gradient(circle at bottom right, var(--colour-light-brown), var(--colour-brown)), repeating-radial-gradient(circle at bottom right, var(--colour-light-brown), var(--colour-light-brown), 10px, transparent 20px, transparent 10px);
-      }
+            &:hover,
+            &:focus {
+                background-color: var(--colour-green);
+
+                a {
+                    color: var(--colour-dark-green);
+                }
+            }
+        }
+
+        &--secondary {
+            border-color: var(--colour-brown);
+
+            a {
+                color: var(--colour-brown);
+            }
+
+            &:hover,
+            &:focus {
+                border-color: var(--colour-green);
+
+                a {
+                    color: var(--colour-dark-green);
+                }
+            }
+        }
     }
 }

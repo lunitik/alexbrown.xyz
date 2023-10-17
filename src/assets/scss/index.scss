@@ -91,11 +91,16 @@ a {
   
   /* sections */
   
-  section {
-    position: relative;
-    width: auto;
-    margin: 0;
-    padding: 1rem;
+  main {
+    > {
+      section {
+        position: relative;
+        width: auto;
+        margin: 0;
+        padding: 1rem;
+        background-color: var(--colour-white);
+      }
+    }
   }
 
   /* full page loader */

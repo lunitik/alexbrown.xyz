@@ -1,0 +1,12 @@
+.comingsoon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+
+    &-colour-mode {
+        &--dark {
+            background-color: var(--colour-black);
+        }
+    }
+}
