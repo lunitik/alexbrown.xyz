@@ -117,6 +117,13 @@
         },
         "comingsoon" : {
             "heading" : "Wkrótce"
+        },
+        "blogresults" : {
+            "heading" : "Blogi"
+        },
+        "search" : {
+            "search_input_label" : "Odkryć...",
+            "clear" : "jasne wyniki"
         }
     }    
 }

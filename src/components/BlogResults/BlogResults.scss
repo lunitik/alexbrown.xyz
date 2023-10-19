@@ -1,0 +1,24 @@
+.blogresults {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        width: 1600px;
+        margin: 0 auto;
+        padding: 5rem 1rem;
+
+        &__header {
+            margin-bottom: 2rem;
+
+            svg {
+                margin-right: 1rem;
+            }
+        }
+
+        &__results {
+            display: grid;
+            gap: 2em 2em;
+            grid: repeat(2, auto) / auto-flow 350px;
+        }
+    }
+}
