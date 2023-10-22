@@ -1,0 +1,17 @@
+.blog {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: 5rem 2rem;
+
+        &[data-colour-mode="light"] {
+            background-color: var(--colour-white);
+        }
+        
+        &[data-colour-mode="dark"] {
+            background-color: var(--colour-black);
+        }
+    }
+}

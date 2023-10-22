@@ -5,9 +5,10 @@
         "slug": "test"
     },
     {
-        "title": "tytuł testu",
-        "body": "ciało testowe",
-        "slug": "test"
+        "title": "Jak szukać",
+        "body": "In this article we discover how to search and ultimately find what we're looking for.",
+        "slug": "jak-szukac",
+        "seed" : "4156"
     },
     {
         "title": "tytuł testu",

@@ -21,4 +21,8 @@
             grid: repeat(2, auto) / auto-flow 350px;
         }
     }
+
+    &[data-colour-mode="dark"] {
+        background-color: var(--colour-black);
+    }
 }

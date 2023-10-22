@@ -1,20 +1,50 @@
 .pagebackground {
-    background: var(--colour-turquoise);
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      transform-origin: top right;
-      z-index: -1;
-      opacity: 0.5;
-      background-image: radial-gradient(circle at bottom right, var(--colour-light-grey), var(--colour-turquoise)), repeating-radial-gradient(circle at bottom right, var(--colour-light-grey), var(--colour-light-grey), 10px, transparent 20px, transparent 10px);
-      background-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top right;
+    z-index: -1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-      &[data-color-mode="dark"] {
-        background: var(--colour-brown);
-        background-image: radial-gradient(circle at bottom right, var(--colour-light-brown), var(--colour-brown)), repeating-radial-gradient(circle at bottom right, var(--colour-light-brown), var(--colour-light-brown), 10px, transparent 20px, transparent 10px);
-      }
+    &.default {
+        background: var(--colour-turquoise);
+
+        background-image: radial-gradient(
+                circle at bottom right,
+                var(--colour-light-grey),
+                var(--colour-turquoise)
+            ),
+            repeating-radial-gradient(
+                circle at bottom right,
+                var(--colour-light-grey),
+                var(--colour-light-grey),
+                10px,
+                transparent 20px,
+                transparent 10px
+            );
+        background-blend-mode: multiply;
+
+        &[data-color-mode="dark"] {
+            background: var(--colour-brown);
+            background-image: radial-gradient(
+                    circle at bottom right,
+                    var(--colour-light-brown),
+                    var(--colour-brown)
+                ),
+                repeating-radial-gradient(
+                    circle at bottom right,
+                    var(--colour-light-brown),
+                    var(--colour-light-brown),
+                    10px,
+                    transparent 20px,
+                    transparent 10px
+                );
+        }
+    }
 }

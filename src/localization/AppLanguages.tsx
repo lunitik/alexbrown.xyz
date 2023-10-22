@@ -7,7 +7,8 @@ export enum AppLanguage {
 export enum AppRoute {
     Home = 'routes.home',
     Contact = 'routes.contact',
-    Blogs = 'routes.blogs'
+    Blogs = 'routes.blogs',
+    BlogHowToSearch = 'routes.blog.howtosearch'
 }
 
 import { LanguageStrings, en } from './localizations/base-strings';

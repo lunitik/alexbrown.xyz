@@ -34,7 +34,7 @@ function BlogCard(props: {data: IBlogData}) {
                 </Typography>
             </CardContent>
             <CardActions className="blogcard__actions">
-                <Button size="small"><Link to={props.data.slug}>Learn more</Link></Button>
+                <Button size="small"><Link to={props.data.slug} reloadDocument>Learn more</Link></Button>
             </CardActions>
         </Card>
     );

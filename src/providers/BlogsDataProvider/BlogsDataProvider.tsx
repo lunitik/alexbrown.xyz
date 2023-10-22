@@ -9,17 +9,17 @@ import { MUIWrapperContext } from "../../context/MUIWrapper";
 
 
 export const BlogsDataProvider = ({children}) => {
-    const [blogs, setBlogs] = useState<BlogData[]>([]);
+    const [blogs, setBlogs] = useState<BlogData[]>();
     const muiUtils = useContext(MUIWrapperContext);
 
     useEffect(() => {
-        async function fetchData() {
+        const fetchData = async () => {
             fetch(`/data/blogs-${muiUtils.locale.lng}.json`)
                 .then((data) => data.json())
                 .then((data) => setBlogs(data))
         }
         fetchData();
-    }, []);
+    }, [muiUtils.locale.lng]);
 
     return (
         <BlogsContext.Provider value={blogs}>
@@ -27,3 +27,5 @@ export const BlogsDataProvider = ({children}) => {
         </BlogsContext.Provider>
     );
 };
+
+export default BlogsDataProvider;
