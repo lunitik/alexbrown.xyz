@@ -14,3 +14,8 @@ Style Experience Scrollbar - double check snap scrolling.
 
 [DONE] Implement URL change on lang change and bind the url to the language.
 See if you can rework router in App.tsx so paths are defined as /:lang
+Blogs, SEO data
+Blogs back to results.
+Blogs Share
+Blogs Tagging. & filter on tagging.
+fix in firefox
