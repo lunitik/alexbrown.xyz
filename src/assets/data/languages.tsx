@@ -64,6 +64,22 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/blogs/dark-mode",
                         xdefault: true,
                     }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/blogs/language-selection",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/language-selection",
+                        xdefault: true,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/blogs/dynamically-initialised-state",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/dynamically-initialised-state",
+                        xdefault: true,
+                    }
                 }
             ],
         },
@@ -112,6 +128,22 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/en-us/blogs/dark-mode",
                         xdefault: false,
                     }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/en-us/blogs/language-selection",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/language-selection",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/en-us/blogs/dynamically-initialised-state",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/dynamically-initialised-state",
+                        xdefault: false,
+                    }
                 }
             ],
         },
@@ -158,6 +190,22 @@ export const languages: Array<Language> = [
                     path: "/pl-pl/blogi/tryb-ciemny",
                     metadata: {
                         canonical: "https://www.alexbrown.xyz/pl-pl/blogi/tryb-ciemny",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/pl-pl/blogi/wybor-jezyka",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/wybor-jezyka",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/pl-pl/blogi/stan-zainicjowany-dynamicznie",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/stan-zainicjowany-dynamicznie",
                         xdefault: false,
                     }
                 }
