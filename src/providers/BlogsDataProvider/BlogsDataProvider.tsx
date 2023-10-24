@@ -1,4 +1,5 @@
 import {
+    ReactNode,
     useContext,
     useEffect,
     useState,
@@ -7,8 +8,11 @@ import { BlogsContext } from "./BlogsContext";
 import { BlogData } from "../../components/BlogCard/BlogCard";
 import { MUIWrapperContext } from "../../context/MUIWrapper";
 
+interface Props {
+    children?: ReactNode
+}
 
-export const BlogsDataProvider = ({children}) => {
+export const BlogsDataProvider = ({children} : Props) => {
     const [blogs, setBlogs] = useState<BlogData[]>([]);
     const muiUtils = useContext(MUIWrapperContext);
 
