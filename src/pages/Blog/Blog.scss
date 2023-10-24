@@ -1,0 +1,30 @@
+.blog {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: 5rem 2rem;
+
+        &[data-colour-mode="light"] {
+            background-color: var(--colour-white);
+
+            .blog__navigation {
+                background-color: var(--colour-grey);
+            }
+        }
+        
+        &[data-colour-mode="dark"] {
+            background-color: var(--colour-black);
+
+            .blog__navigation {
+                background-color: var(--colour-brown);
+            }
+        }
+    }
+
+    &__navigation {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+}

@@ -30,6 +30,40 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/blogs",
             "keywords": ["blogi od twórcy stron internetowych"]
+        },
+        "blog" : {
+            "jak-szukac" : {
+                "title": "Jak szukać | alexbrown.xyz",
+                "description": "Jak wyszukiwać w tej witrynie",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/how-to-search",
+                "keywords": ["Jak szukać"]
+            },
+            "tryb-ciemny" : {
+                "title": "Tryb Ciemny | alexbrown.xyz",
+                "description": "Przyjrzyjmy się, jak zaimplementowano tryb ciemny na tej stronie",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/dark-mode",
+                "keywords": ["tryb ciemny"]
+            },
+            "wybor-jezyka" : {
+                "title": "Wybór języka | alexbrown.xyz",
+                "description": "Przyjrzyjmy się, jak w tej witrynie zaimplementowano wybór języka",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/language-selection",
+                "keywords": ["Wybór języka", "multi-lingual"]
+            },
+            "stan-zainicjowany-dynamicznie" : {
+                "title": "Stan zainicjowany dynamicznie | alexbrown.xyz",
+                "description": "Co się stanie, jeśli zrobisz źle stan? Spójrzmy.",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogi/stan-zainicjowany-dynamicznie",
+                "keywords": ["stan dynamiczny", "zła inicjalizacja"]
+            }
         }
     },
     "components" : {
@@ -38,7 +72,7 @@
             "footer__sign-off--end" : "przeze mnie w 2023 roku"
         },
         "about" : {
-            "about__heading" : "0 mnie",
+            "about__heading" : "O mnie",
             "about__personalstatement__heading" : "Oświadczenie osobiste",
             "about__personalstatement__text" : "Starszy Web Manager/Programista z ponad 18-letnim doświadczeniem zawodowym w tworzeniu, rozwoju i zarządzaniu stronami internetowymi. Dogłębna wiedza na temat projektowania i tworzenia stron internetowych, a także szeroka wiedza na temat tworzenia oprogramowania i aplikacji, połączona z kreatywnym zestawem umiejętności projektowych, analitycznych i marketingowych. Ciężko pracujący, zmotywowany i pełen pasji technolog, charakteryzujący się wzorową frekwencją i terminowością."
         },
@@ -117,6 +151,13 @@
         },
         "comingsoon" : {
             "heading" : "Wkrótce"
+        },
+        "blogresults" : {
+            "heading" : "Blogi"
+        },
+        "search" : {
+            "search_input_label" : "Odkryć...",
+            "clear" : "jasne wyniki"
         }
     }    
 }

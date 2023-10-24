@@ -30,6 +30,40 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/blogs",
             "keywords": ["blogs from a web developer"]
+        },
+        "blog" : {
+            "how-to-search" : {
+                "title": "How to search | alexbrown.xyz",
+                "description": "How to search on this site specifically",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/how-to-search",
+                "keywords": ["learning search"]
+            },
+            "dark-mode" : {
+                "title": "Dark Mode | alexbrown.xyz",
+                "description": "Let's explore how dark mode was implemented on this site",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/dark-mode",
+                "keywords": ["dark mode"]
+            },
+            "language-selection" : {
+                "title": "Language Selection | alexbrown.xyz",
+                "description": "Let's explore how language selection was implemented on this site",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/language-selection",
+                "keywords": ["language selection", "multi-lingual"]
+            },
+            "dynamically-initialised-state" : {
+                "title": "Dynamically Initialized State | alexbrown.xyz",
+                "description": "What happens when you do the state wrong? Let's take a look.",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/dynamically-initialised-state",
+                "keywords": ["dynamic state", "bad initialization"]
+            }
         }
     },
     "components" : {
@@ -117,6 +151,13 @@
         },
         "comingsoon" : {
             "heading" : "Coming Soon"
+        },
+        "blogresults" : {
+            "heading" : "Blogs"
+        },
+        "search" : {
+            "search_input_label" : "Discover...",
+            "clear" : "clear results"
         }
     }    
 }

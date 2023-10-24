@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Dark Mode",
+        "body": "'Oww, my eyes!' I hear you cry. Or perhaps not as on this site the infamous 'dark mode' has been implemented and it even confirms to your personal browser settings. Let's take a look to see how it was done.",
+        "slug": "dark-mode",
+        "seed" : "4513"
+    },
+    {
+        "title": "Language Selection",
+        "body": "Who would have thought that switching between multiple languages could be so complex? Here we'll walk through all the different aspects of tracking and storing available and current languages, translations and how to navigate between them.",
+        "slug": "language-selection",
+        "seed" : "72"
+    },
+    {
+        "title": "How to search",
+        "body": "In this article we discover how to search and ultimately find what we're looking for.",
+        "slug": "how-to-search",
+        "seed" : "4156"
+    },
+    {
+        "title": "Dynamically Initialised State",
+        "body": "Have you ever wanted to set your initial state to some dynamic value? Like me you may have tried to initialise useState() with a dynamic value and if you did you may have noticed it doesn't behave the way you expect.",
+        "slug": "dynamically-initialised-state",
+        "seed" : "78945"
+    }
+]

@@ -43,7 +43,6 @@ export const Seo = (props: { pageKey: string }) => {
         }        
         <link rel="icon" href="/images/favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"/>
-        <style content='.loading {display: inline-block;width: 175px;height: 175px;}.loading:after {content: " ";display: block;width: 150px;height: 150px;margin: 8px;border-radius: 50%;border: 6px solid #000;border-color: #000 transparent #000 transparent;animation: lds-dual-ring 1.2s linear infinite;} @keyframes lds-dual-ring {0% {transform: rotate(0deg);}100% {transform: rotate(360deg);}}'></style>
     </Helmet>
   );
 };

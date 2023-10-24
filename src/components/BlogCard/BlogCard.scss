@@ -1,0 +1,15 @@
+.blogcard {
+    display: flex;
+    flex-direction: column;
+
+    &__body {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    &__actions {
+        margin-top: auto;
+    }
+}

@@ -92,10 +92,14 @@
                     background-color: var(--colour-white);
                 }
             }
+
+        }
+
+        .herobanner__container--content {
+            display: flex;
         }
 
         &--content {
-            display: flex;
             align-content: center;
             justify-content: center;
             gap: 1rem;

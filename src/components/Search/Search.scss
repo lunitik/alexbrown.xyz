@@ -1,0 +1,12 @@
+.search {
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    &__autocomplete {
+        width: 400px;        
+    }
+}

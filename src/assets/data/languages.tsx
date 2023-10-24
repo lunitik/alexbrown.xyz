@@ -31,7 +31,7 @@ export const languages: Array<Language> = [
                     metadata: {
                         canonical: "https://www.alexbrown.xyz/",
                         xdefault: true,
-                    },
+                    }
                 },
                 {
                     name: "contact",
@@ -39,8 +39,48 @@ export const languages: Array<Language> = [
                     metadata: {
                         canonical: "https://www.alexbrown.xyz/contact",
                         xdefault: true,
-                    },
+                    }
                 },
+                {
+                    name: "blogs",
+                    path: "/blogs",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs",
+                        xdefault: true,
+                    }
+                },
+                {
+                    name: "blog.how-to-search",
+                    path: "/blogs/how-to-search",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/how-to-search",
+                        xdefault: true,
+                    }
+                },
+                {
+                    name: "blog.dark-mode",
+                    path: "/blogs/dark-mode",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/dark-mode",
+                        xdefault: true,
+                    }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/blogs/language-selection",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/language-selection",
+                        xdefault: true,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/blogs/dynamically-initialised-state",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/blogs/dynamically-initialised-state",
+                        xdefault: true,
+                    }
+                }
             ],
         },
     },
@@ -65,6 +105,46 @@ export const languages: Array<Language> = [
                         xdefault: false,
                     },
                 },
+                {
+                    name: "blogs",
+                    path: "/en-us/blogs",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.how-to-search",
+                    path: "/en-us/blogs/how-to-search",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/how-to-search",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dark-mode",
+                    path: "/en-us/blogs/dark-mode",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/dark-mode",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/en-us/blogs/language-selection",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/language-selection",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/en-us/blogs/dynamically-initialised-state",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/blogs/dynamically-initialised-state",
+                        xdefault: false,
+                    }
+                }
             ],
         },
     },
@@ -83,12 +163,52 @@ export const languages: Array<Language> = [
                 },
                 {
                     name: "contact",
-                    path: "/pl-pl/contact",
+                    path: "/pl-pl/kontakt",
                     metadata: {
-                        canonical: "https://www.alexbrown.xyz/pl-pl/contact",
+                        canonical: "https://www.alexbrown.xyz/pl-pl/kontakt",
                         xdefault: false,
                     },
                 },
+                {
+                    name: "blogs",
+                    path: "/pl-pl/blogi",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.how-to-search",
+                    path: "/pl-pl/blogi/jak-szukac",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/jak-szukac",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dark-mode",
+                    path: "/pl-pl/blogi/tryb-ciemny",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/tryb-ciemny",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.language-selection",
+                    path: "/pl-pl/blogi/wybor-jezyka",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/wybor-jezyka",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "blog.dynamically-initialised-state",
+                    path: "/pl-pl/blogi/stan-zainicjowany-dynamicznie",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/blogi/stan-zainicjowany-dynamicznie",
+                        xdefault: false,
+                    }
+                }
             ],
         },
     },
