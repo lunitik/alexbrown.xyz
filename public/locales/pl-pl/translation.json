@@ -32,7 +32,7 @@
             "keywords": ["blogi od twórcy stron internetowych"]
         },
         "blog" : {
-            "how-to-search" : {
+            "jak-szukac" : {
                 "title": "Jak szukać | alexbrown.xyz",
                 "description": "Jak wyszukiwać w tej witrynie",
                 "type": "",
@@ -40,13 +40,29 @@
                 "canonical": "https://www.alexbrown.xyz/blogs/how-to-search",
                 "keywords": ["Jak szukać"]
             },
-            "dark-mode" : {
+            "tryb-ciemny" : {
                 "title": "Tryb Ciemny | alexbrown.xyz",
                 "description": "Przyjrzyjmy się, jak zaimplementowano tryb ciemny na tej stronie",
                 "type": "",
                 "name": "Alex Brown",
                 "canonical": "https://www.alexbrown.xyz/blogs/dark-mode",
                 "keywords": ["tryb ciemny"]
+            },
+            "wybor-jezyka" : {
+                "title": "Wybór języka | alexbrown.xyz",
+                "description": "Przyjrzyjmy się, jak w tej witrynie zaimplementowano wybór języka",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/language-selection",
+                "keywords": ["Wybór języka", "multi-lingual"]
+            },
+            "stan-zainicjowany-dynamicznie" : {
+                "title": "Stan zainicjowany dynamicznie | alexbrown.xyz",
+                "description": "Co się stanie, jeśli zrobisz źle stan? Spójrzmy.",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogi/stan-zainicjowany-dynamicznie",
+                "keywords": ["stan dynamiczny", "zła inicjalizacja"]
             }
         }
     },

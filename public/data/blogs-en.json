@@ -6,9 +6,9 @@
         "seed" : "4513"
     },
     {
-        "title": "jim title",
-        "body": "test body",
-        "slug": "jim",
+        "title": "Language Selection",
+        "body": "Who would have thought that switching between multiple languages could be so complex? Here we'll walk through all the different aspects of tracking and storing available and current languages, translations and how to navigate between them.",
+        "slug": "language-selection",
         "seed" : "72"
     },
     {
@@ -18,27 +18,9 @@
         "seed" : "4156"
     },
     {
-        "title": "Lorem ipsum dolor sit amet",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquet eu ipsum sit amet placerat. Mauris lacus diam, iaculis aliquet imperdiet fringilla, auctor venenatis nunc. Integer elementum id augue eleifend venenatis. Etiam porttitor ultrices ullamcorper. Sed sodales euismod turpis eget laoreet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum pharetra tellus sit amet ex eleifend, eu malesuada arcu efficitur. Pellentesque lorem orci, condimentum vel lacinia et, tempor eu mauris. Etiam non blandit risus. Aliquam vel lacinia nulla. Vivamus sapien justo, lobortis ut justo quis, venenatis faucibus quam. Ut bibendum fermentum erat volutpat elementum. Aenean nec tincidunt libero. Nam ac elit a odio suscipit mattis. Aenean nec mollis mi, nec rhoncus diam. Morbi viverra ex quis dolor ornare scelerisque.",
-        "slug": "lorem-ipsum-dolor-sit-amet",
+        "title": "Dynamically Initialised State",
+        "body": "Have you ever wanted to set your initial state to some dynamic value? Like me you may have tried to initialise useState() with a dynamic value and if you did you may have noticed it doesn't behave the way you expect.",
+        "slug": "dynamically-initialised-state",
         "seed" : "78945"
-    },
-    {
-        "title": "Pellentesque",
-        "body": "Pellentesque tristique dui ut ultrices vestibulum. Quisque mollis quis nibh varius sodales. Phasellus quis mattis velit, dignissim porttitor sem. Vivamus hendrerit et augue at cursus. Proin id eros erat. Vivamus tempus nisi pellentesque velit suscipit, et malesuada diam ultricies. Nullam posuere ante non urna tempus, eu aliquam ipsum hendrerit. Maecenas semper arcu magna, quis accumsan nunc gravida id. Vivamus quis blandit urna.",
-        "slug": "pellentesque",
-        "seed" : "456"
-    },
-    {
-        "title": "Donec in ipsum",
-        "body": "Donec in ipsum nec est facilisis fringilla id quis nunc. Aenean non sem ullamcorper, molestie lectus ac, tempus magna. Mauris egestas arcu felis, sodales fermentum arcu porta nec. In sed nunc eget odio scelerisque lacinia non vel dolor. Praesent vel ultricies lorem, ornare laoreet orci. In nec elementum ante. Fusce at nulla ac arcu pellentesque molestie sit amet fermentum nisi. Integer ullamcorper diam sagittis pellentesque mattis. Proin a massa at tellus fringilla ultricies non ut nibh. Sed consequat laoreet felis at blandit.",
-        "slug": "donec-in-ipsum",
-        "seed" : "196185"
-    },
-    {
-        "title": "Nullam sit amet consequat odio.",
-        "body": "Nullam sit amet consequat odio. Praesent pharetra faucibus augue. Vivamus nec elit id est varius aliquet. Quisque vestibulum pellentesque sapien ac pellentesque. Phasellus vel ullamcorper justo. Nam finibus semper massa vel volutpat. Vivamus convallis ante eu nibh cursus, eu congue nulla viverra. Nulla non venenatis lacus. Vivamus dignissim bibendum dui, ac accumsan ante hendrerit id. Fusce sed nisi eget felis condimentum aliquam. Donec nec leo varius, auctor urna ut, malesuada lorem.",
-        "slug": "nullam-sit-amet-consequat-odio",
-        "seed" : "78912"
     }
 ]

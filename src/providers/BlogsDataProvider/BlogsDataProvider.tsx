@@ -14,7 +14,7 @@ export const BlogsDataProvider = ({children}) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            fetch(`/data/blogs-${muiUtils.locale.lng}.json`)
+            await fetch(`/data/blogs-${muiUtils.locale.lng}.json`)
                 .then((data) => data.json())
                 .then((data) => setBlogs(data))
         }

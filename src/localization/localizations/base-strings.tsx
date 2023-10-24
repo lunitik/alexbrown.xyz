@@ -3,7 +3,9 @@ const baseStrings = {
     'routes.contact' : '/contact',
     'routes.blogs' : '/blogs',
     'routes.blog.howtosearch' : '/blogs/how-to-search',
-    'routes.blog.darkmode' : '/blogs/dark-mode'
+    'routes.blog.darkmode' : '/blogs/dark-mode',
+    'routes.blog.languageselection' : '/blogs/language-selection',
+    'routes.blog.dynamicstate' : '/blogs/dynamically-initialised-state'
 };
 
 export type LanguageStrings = typeof baseStrings;
