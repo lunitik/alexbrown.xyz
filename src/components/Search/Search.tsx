@@ -3,7 +3,7 @@ import { Autocomplete, Button, Container, TextField } from "@mui/material";
 import { useSearchParams } from "react-router-dom";
 import { useBlogs } from "../../providers/BlogsDataProvider/useBlogs";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Search() {
     const [searchParams, setSearchParams] = useSearchParams();
@@ -11,7 +11,11 @@ function Search() {
         keyPrefix: "components.search",
     });
     const blogs = useBlogs();
-    const [disabled, setDisabled] = useState<boolean>(!searchParams ? true : false);
+    const [disabled, setDisabled] = useState<boolean>(false);
+
+    useEffect(() => {
+        setDisabled(!searchParams ? true : false)
+    }, [searchParams]);
 
     const handleClearSearch = () => {
         setSearchParams();

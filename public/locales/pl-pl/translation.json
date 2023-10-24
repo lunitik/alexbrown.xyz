@@ -30,6 +30,24 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/blogs",
             "keywords": ["blogi od twórcy stron internetowych"]
+        },
+        "blog" : {
+            "how-to-search" : {
+                "title": "Jak szukać | alexbrown.xyz",
+                "description": "Jak wyszukiwać w tej witrynie",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/how-to-search",
+                "keywords": ["Jak szukać"]
+            },
+            "dark-mode" : {
+                "title": "Tryb Ciemny | alexbrown.xyz",
+                "description": "Przyjrzyjmy się, jak zaimplementowano tryb ciemny na tej stronie",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/dark-mode",
+                "keywords": ["tryb ciemny"]
+            }
         }
     },
     "components" : {

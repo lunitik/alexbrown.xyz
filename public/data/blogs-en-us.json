@@ -4,5 +4,11 @@
         "body": "In this article we discover how to search and ultimately find what we're looking for.",
         "slug": "how-to-search",
         "seed" : "4156"
+    },
+    {
+        "title": "Dark Mode",
+        "body": "'Oww, my eyes!' I hear you cry. Or perhaps not as on this site the infamous 'dark mode' has been implemented and it even confirms to your personal browser settings. Let's take a look to see how it was done.",
+        "slug": "dark-mode",
+        "seed" : "4513"
     }
 ]

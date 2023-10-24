@@ -18,4 +18,5 @@ Blogs, SEO data
 Blogs back to results.
 Blogs Share
 Blogs Tagging. & filter on tagging.
-fix in firefox
+[DONE] fix in firefox
+experience component horizontal scroll in firefox broken

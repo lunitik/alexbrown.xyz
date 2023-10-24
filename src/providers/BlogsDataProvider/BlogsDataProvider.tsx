@@ -9,7 +9,7 @@ import { MUIWrapperContext } from "../../context/MUIWrapper";
 
 
 export const BlogsDataProvider = ({children}) => {
-    const [blogs, setBlogs] = useState<BlogData[]>();
+    const [blogs, setBlogs] = useState<BlogData[]>([]);
     const muiUtils = useContext(MUIWrapperContext);
 
     useEffect(() => {

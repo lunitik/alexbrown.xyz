@@ -9,6 +9,7 @@ import Search from '../Search/Search';
 import { useSearchParams } from 'react-router-dom';
 import { filterBlogs } from '../../features/blogsearchhelpers';
 import Loading from '../Loading/Loading';
+import { useEffect, useState } from 'react';
 
 function BlogResults() {
     const theme = useTheme();
@@ -16,7 +17,13 @@ function BlogResults() {
     const blogs = useBlogs();
     const [searchParams] = useSearchParams();
     const title = searchParams.get('title');
-    const filteredBlogs = title ? filterBlogs(title, blogs) : blogs;
+    const [filteredBlogs, setFilteredBlogs] = useState<BlogData[]>([]);
+
+    useEffect(() => {
+        if (blogs != undefined) {
+            setFilteredBlogs(title ? filterBlogs(title, blogs) : blogs)
+        }
+    }, [blogs, title]);
 
     return (
         <section className='blogresults' data-colour-mode={theme.palette.mode}>

@@ -4,5 +4,6 @@ export const enUS: LanguageStrings = {
     'routes.home' : '/',
     'routes.contact' : '/contact',
     "routes.blogs" : '/blogs',
-    'routes.blog.howtosearch' : '/blogs/how-to-search'
+    'routes.blog.howtosearch' : '/blogs/how-to-search',
+    'routes.blog.darkmode' : '/blogs/dark-mode'
 }

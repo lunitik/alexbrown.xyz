@@ -1,15 +1,15 @@
 [
     {
-        "title": "test title",
-        "body": "test body",
-        "slug": "test",
-        "seed" : "72"
+        "title": "Dark Mode",
+        "body": "'Oww, my eyes!' I hear you cry. Or perhaps not as on this site the infamous 'dark mode' has been implemented and it even confirms to your personal browser settings. Let's take a look to see how it was done.",
+        "slug": "dark-mode",
+        "seed" : "4513"
     },
     {
         "title": "jim title",
         "body": "test body",
         "slug": "jim",
-        "seed" : "4513"
+        "seed" : "72"
     },
     {
         "title": "How to search",

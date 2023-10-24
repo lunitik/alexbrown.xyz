@@ -30,6 +30,24 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/blogs",
             "keywords": ["blogs from a web developer"]
+        },
+        "blog" : {
+            "how-to-search" : {
+                "title": "How to search | alexbrown.xyz",
+                "description": "How to search on this site specifically",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/how-to-search",
+                "keywords": ["learning search"]
+            },
+            "dark-mode" : {
+                "title": "Dark Mode | alexbrown.xyz",
+                "description": "Let's explore how dark mode was implemented on this site",
+                "type": "",
+                "name": "Alex Brown",
+                "canonical": "https://www.alexbrown.xyz/blogs/dark-mode",
+                "keywords": ["dark mode"]
+            }
         }
     },
     "components" : {

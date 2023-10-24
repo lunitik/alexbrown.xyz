@@ -8,7 +8,8 @@ export enum AppRoute {
     Home = 'routes.home',
     Contact = 'routes.contact',
     Blogs = 'routes.blogs',
-    BlogHowToSearch = 'routes.blog.howtosearch'
+    BlogHowToSearch = 'routes.blog.howtosearch',
+    BlogDarkMode = 'routes.blog.darkmode'
 }
 
 import { LanguageStrings, en } from './localizations/base-strings';

@@ -1,8 +1,9 @@
 [
     {
-        "title": "tytuł testu",
-        "body": "ciało testowe",
-        "slug": "test"
+        "title": "Tryb ciemny",
+        "body": "'Och, moje oczy!' Słyszę twój płacz. A może nie, ponieważ na tej stronie zaimplementowano niesławny 'tryb ciemny', który nawet potwierdza ustawienia Twojej osobistej przeglądarki. Przyjrzyjmy się, jak to zostało zrobione.",
+        "slug": "tryb-ciemny",
+        "seed" : "4513"
     },
     {
         "title": "Jak szukać",
