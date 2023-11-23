@@ -64,6 +64,14 @@
                 "canonical": "https://www.alexbrown.xyz/blogs/dynamically-initialised-state",
                 "keywords": ["dynamic state", "bad initialization"]
             }
+        },
+        "game" : {
+            "title": "Let's Play: Rock, Paper, Scissors! | alexbrown.xyz",
+            "description": "A fun little game of rock, paper, scissors. Can you get a winning streak?",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/rock-paper-scissors",
+            "keywords": ["game", "rock, paper, scissors"]
         }
     },
     "components" : {
@@ -100,7 +108,8 @@
             "contact" : "Contact",
             "blogs" : "Blogs",
             "utilities" : "Utilities",
-            "menu" : "Explore"
+            "menu" : "Explore",
+            "game" : "Rock, Paper, Scissors!"
         },
         "education" : {
             "education__heading" : "education",
@@ -158,6 +167,13 @@
         "search" : {
             "search_input_label" : "Discover...",
             "clear" : "clear results"
+        },
+        "game" : {
+            "title" : "Rock, Paper, Scissors!",
+            "instructions" : "Make a selection and click PLAY to begin!",
+            "instructions-title" : "Instructions",
+            "opponentChoice" : "Your opponent chose:",
+            "gameResult" : "YOU"
         }
     }    
 }

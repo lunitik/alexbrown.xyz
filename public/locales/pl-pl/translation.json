@@ -64,6 +64,14 @@
                 "canonical": "https://www.alexbrown.xyz/blogi/stan-zainicjowany-dynamicznie",
                 "keywords": ["stan dynamiczny", "zła inicjalizacja"]
             }
+        },
+        "game" : {
+            "title": "Let's Play: Rock, Paper, Scissors! | alexbrown.xyz",
+            "description": "A fun little game of rock, paper, scissors. Can you get a winning streak?",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/rock-paper-scissors",
+            "keywords": ["game", "rock, paper, scissors"]
         }
     },
     "components" : {
@@ -107,7 +115,8 @@
             "contact" : "Kontakt",
             "blogs" : "Blogi",
             "utilities" : "Narzędzia",
-            "menu" : "Badać"
+            "menu" : "Badać",
+            "game" : "Rock, Paper, Scissors!"
         },
         "experience" : {
             "experience__heading--skills" : "umiejętności",

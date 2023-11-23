@@ -56,6 +56,10 @@ function NavigationMenu() {
         getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Blogs)
     );
 
+    const gameLink = (
+        getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Game)
+    );
+
     const drawer = (
         <Box className="navigationmenu__drawer" onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
@@ -68,6 +72,9 @@ function NavigationMenu() {
                 </NavLink>
                 <NavLink to={blogsLink}>
                     <Typography variant="body1">{t("blogs")}</Typography>
+                </NavLink>
+                <NavLink to={gameLink}>
+                    <Typography variant="body1">{t("game")}</Typography>
                 </NavLink>
             </List>
             <List className="navigationmenu__drawer__list">
@@ -106,6 +113,9 @@ function NavigationMenu() {
                             </NavLink>
                             <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={blogsLink}>
                                 <Typography variant="body1">{t("blogs")}</Typography>
+                            </NavLink>
+                            <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={gameLink}>
+                                <Typography variant="body1">{t("game")}</Typography>
                             </NavLink>
                         </MenuItem>
                     </Menu>

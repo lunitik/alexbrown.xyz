@@ -80,6 +80,14 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/blogs/dynamically-initialised-state",
                         xdefault: true,
                     }
+                },
+                {
+                    name: "game",
+                    path: "/rock-paper-scissors",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/rock-paper-scissors",
+                        xdefault: true,
+                    }
                 }
             ],
         },
@@ -144,6 +152,14 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/en-us/blogs/dynamically-initialised-state",
                         xdefault: false,
                     }
+                },
+                {
+                    name: "game",
+                    path: "/en-us/rock-paper-scissors",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/rock-paper-scissors",
+                        xdefault: false,
+                    }
                 }
             ],
         },
@@ -206,6 +222,14 @@ export const languages: Array<Language> = [
                     path: "/pl-pl/blogi/stan-zainicjowany-dynamicznie",
                     metadata: {
                         canonical: "https://www.alexbrown.xyz/pl-pl/blogi/stan-zainicjowany-dynamicznie",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "game",
+                    path: "/pl-pl/rock-paper-scissors",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/rock-paper-scissors",
                         xdefault: false,
                     }
                 }
