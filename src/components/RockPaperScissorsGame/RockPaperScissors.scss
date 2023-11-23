@@ -1,0 +1,180 @@
+@import "../../assets/scss/index.scss";
+
+.rockpaperscissorsgame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    @include large {
+        height: 80vh;
+    }
+
+    &__title {
+        font-family: "Comic Sans MS";
+        font-weight: bolder;
+        -webkit-text-stroke-color: var(--colour-black);
+        -webkit-text-fill-color: rgb(255, 185, 0);
+        -webkit-text-stroke-width: 0.125rem;
+        font-size: 2rem;
+        padding: 0;
+
+        @include large {
+            -webkit-text-stroke-width: 0.5rem;
+            font-size: 5.9983rem;
+        }
+
+        &_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        &_flourish {
+            font-size: 40px;
+        }
+    }
+
+    &__message {
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 97vw;
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+
+        @include large {
+            min-width: 50vw;
+            min-height: 25vh;
+            width: auto;
+        }
+    }
+
+    &__game_results {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__game_result {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    legend {
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid black;
+    }
+
+    label {
+        border: 1px solid black;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 200ms ease-in;
+        color: transparent;
+        width: 30vw;
+        height: 30vw;
+
+        @include large {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    label:hover {
+        outline: 2px solid black;
+        outline-offset: 3px;
+    }
+
+    label:has(input[type="radio"]:checked) {
+        background-color: var(--colour-brown);
+    }
+
+    label:has(input[type="radio"]:focus) {
+        outline: 2px solid black;
+        outline-offset: 3px;
+    }
+
+    input[type="radio"] {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+    }
+
+    input[type="radio"]:focus {
+        outline: none;
+    }
+
+    input[type="radio"]::after {
+        display: block;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 6rem;
+        transform: translate(-3rem, -4.5rem);
+
+        @include large {
+            font-size: 8rem;
+            transform: translate(-4rem, -6rem);
+        }
+    }
+
+    input[name="rock"]::after {
+        content: "✊";
+    }
+
+    input[name="paper"]::after {
+        content: "✋";
+    }
+
+    input[name="scissors"]::after {
+        content: "✌";
+    }
+
+    &__sparkles {
+        font-size: 40px;
+    }
+
+    &-colour-mode {        
+        &--dark {
+            .rockpaperscissorsgame {
+                &__message {
+                    background-color: var(--colour-brown);
+                }
+            } 
+            
+            label {
+                border: 1px solid var(--colour-brown);
+            }
+            
+            label:hover {
+                outline: 2px solid var(--colour-brown);
+                outline-offset: 3px;
+            }
+        
+            label:has(input[type="radio"]:focus) {
+                outline: 2px solid var(--colour-brown);
+            }
+        }
+    }
+}

@@ -10,6 +10,7 @@ import "./App.scss";
 import MUIWrapper from "./context/MUIWrapper";
 import Loading from "./components/Loading/Loading";
 import { HelmetProvider } from 'react-helmet-async';
+const RockPaperScissors = lazy(() => import("./pages/RockPaperScissors/RockPaperScissors"));
 const BlogsDataProvider = lazy(() => import("./providers/BlogsDataProvider/BlogsDataProvider"));
 const Blog = lazy(() => import("./pages/Blog/Blog"));
 const Blogs = lazy(() => import( "./pages/Blogs/Blogs"));
@@ -25,16 +26,19 @@ const router = createBrowserRouter(
       <Route path="contact" element={<Contact />} />
       <Route path="blogs" element={<Blogs />} />
       <Route path="blogs/:title" element={<Blog />} />
+      <Route path="rock-paper-scissors" element={<RockPaperScissors />} />
       {/* 'en-US' routes */}
       <Route path="/en-us/" element={<Home />} />
       <Route path="/en-us/contact" element={<Contact />} />
       <Route path="/en-us/blogs" element={<Blogs />} />
       <Route path="/en-us/blogs/:title" element={<Blog />} />
+      <Route path="/en-us/rock-paper-scissors" element={<RockPaperScissors />} />
       {/* 'pl-pl' routes */}
       <Route path="/pl-pl/" element={<Home />} />
       <Route path="/pl-pl/kontakt" element={<Contact />} />
       <Route path="/pl-pl/blogi" element={<Blogs />} />
       <Route path="/pl-pl/blogi/:title" element={<Blog />} />
+      <Route path="/pl-pl/rock-paper-scissors" element={<RockPaperScissors />} />
     </Route>
   )
 );

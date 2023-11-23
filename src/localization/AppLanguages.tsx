@@ -11,7 +11,8 @@ export enum AppRoute {
     BlogHowToSearch = 'routes.blog.howtosearch',
     BlogDarkMode = 'routes.blog.darkmode',
     BlogLanguageSelection = 'routes.blog.languageselection',
-    BlogDynamicState = 'routes.blog.dynamicstate'
+    BlogDynamicState = 'routes.blog.dynamicstate',
+    Game = 'routes.game'
 }
 
 import { LanguageStrings, en } from './localizations/base-strings';
