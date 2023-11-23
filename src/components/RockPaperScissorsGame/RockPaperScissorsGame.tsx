@@ -3,12 +3,18 @@ import "./RockPaperScissors.scss";
 import { useLocalStorage, useSessionStorage } from "usehooks-ts";
 import { Hand } from "./Enum_Hand";
 import { GameResult } from "./Enum_GameResult";
-import { calculateGameResult, generateOpponentChoice } from "../../features/gameHelpers";
+import {
+    calculateGameResult,
+    generateOpponentChoice,
+} from "../../features/gameHelpers";
 import Typography from "@mui/material/Typography/Typography";
 import { useTranslation } from "react-i18next";
 import Button from "@mui/material/Button";
+import { useTheme } from "@mui/material";
 
 function RockPaperScissorsGame() {
+    const theme = useTheme();
+    const colourModeClasses = `rockpaperscissorsgame rockpaperscissorsgame-colour-mode--${theme.palette.mode}`;
     const { t } = useTranslation("translation", {
         keyPrefix: "components.game",
     });
@@ -29,17 +35,20 @@ function RockPaperScissorsGame() {
 
     function handleOnClick() {
         setGameInPlay(true);
-        const currentGameResult = calculateGameResult(selectedOption, opponentChoice);
+        const currentGameResult = calculateGameResult(
+            selectedOption,
+            opponentChoice
+        );
         setGameResult(currentGameResult);
         handleCurrentWinningStreak(currentGameResult);
         handleWinningStreak();
-    }    
+    }
 
     function handleCurrentWinningStreak(currentGameResult: GameResult | null) {
         if (currentGameResult === null) return;
 
         if (currentGameResult !== GameResult.Win) {
-            setCurrentWinningStreakCount((prevVal: number) => 0);
+            setCurrentWinningStreakCount(() => 0);
         }
 
         if (currentGameResult == GameResult.Win) {
@@ -53,8 +62,8 @@ function RockPaperScissorsGame() {
         }
     }
 
-    const handleOptionChange = (changeEvent) => {
-        setSelectedOption(changeEvent.target.value);
+    const handleOptionChange = (changeEvent: React.SyntheticEvent<HTMLInputElement>) => {
+        setSelectedOption((changeEvent.target as HTMLInputElement).value as Hand | null);
     };
 
     const handleReset = () => {
@@ -65,29 +74,58 @@ function RockPaperScissorsGame() {
     };
 
     return (
-        <div className="rockpaperscissorsgame">
-            <Typography variant="h1" className="rockpaperscissorsgame__title">
-            🏆{t("title")}🏆
-            </Typography>
+        <div className={colourModeClasses}>
+            <div className="rockpaperscissorsgame__title_container">
+                <div className="rockpaperscissorsgame__title_flourish">🏆</div>
+                <Typography
+                    variant="h1"
+                    className="rockpaperscissorsgame__title"
+                >
+                    {t("title")}
+                </Typography>
+                <div className="rockpaperscissorsgame__title_flourish">🏆</div>
+            </div>
             <div id="message" className="rockpaperscissorsgame__message">
-            <Typography variant="h3" className="rockpaperscissorsgame__instructions_title">
-                    {t("instructions-title")}
-                </Typography>
-                <Typography variant="body1" className="rockpaperscissorsgame__instructions">
-                    {t("instructions")}
-                </Typography>
+                {gameResult ? null : <>
+                    <Typography
+                        variant="h3"
+                        className="rockpaperscissorsgame__instructions_title"
+                    >
+                        {t("instructions-title")}
+                    </Typography>
+                    <Typography
+                        variant="body1"
+                        className="rockpaperscissorsgame__instructions"
+                    >
+                        {t("instructions")}
+                    </Typography>
+                </>}
                 {gameResult ? (
                     <div className="rockpaperscissorsgame__game_results">
-                        {gameResult === GameResult.Win ? <div className="rockpaperscissorsgame__sparkles">✨</div> : null}
+                        {gameResult === GameResult.Win ? (
+                            <div className="rockpaperscissorsgame__sparkles">
+                                ✨
+                            </div>
+                        ) : null}
                         <div className="rockpaperscissorsgame__game_results__container">
-                            <Typography variant="body1" className="rockpaperscissorsgame__opponent_choice">
+                            <Typography
+                                variant="body1"
+                                className="rockpaperscissorsgame__opponent_choice"
+                            >
                                 {t("opponentChoice")} {opponentChoice}
                             </Typography>
-                            <Typography variant="body1" className="rockpaperscissorsgame__game_result">
+                            <Typography
+                                variant="body1"
+                                className="rockpaperscissorsgame__game_result"
+                            >
                                 {t("gameResult")} {gameResult}
                             </Typography>
                         </div>
-                        {gameResult === GameResult.Win ? <div className="rockpaperscissorsgame__sparkles">✨</div> : null}
+                        {gameResult === GameResult.Win ? (
+                            <div className="rockpaperscissorsgame__sparkles">
+                                ✨
+                            </div>
+                        ) : null}
                     </div>
                 ) : null}
             </div>
