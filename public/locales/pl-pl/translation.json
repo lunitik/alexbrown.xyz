@@ -167,6 +167,13 @@
         "search" : {
             "search_input_label" : "Odkryć...",
             "clear" : "jasne wyniki"
+        },
+        "game" : {
+            "title" : "Kamień, papier, nożyczki!",
+            "instructions" : "wybierać ✊, ✋ albo ✌ i click PLAY!",
+            "instructions-title" : "📖 Instrukcje",
+            "opponentChoice" : "Twój przeciwnik wybrał:",
+            "gameResult" : "TY"
         }
     }    
 }

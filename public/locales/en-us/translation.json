@@ -167,6 +167,13 @@
         "search" : {
             "search_input_label" : "Discover...",
             "clear" : "clear results"
+        },
+        "game" : {
+            "title" : "Rock, Paper, Scissors!",
+            "instructions" : "select ✊, ✋ or ✌ and click PLAY!",
+            "instructions-title" : "📖 Instructions",
+            "opponentChoice" : "Your opponent chose:",
+            "gameResult" : "YOU"
         }
     }    
 }
