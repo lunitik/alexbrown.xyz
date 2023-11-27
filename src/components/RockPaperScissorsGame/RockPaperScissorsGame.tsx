@@ -11,6 +11,7 @@ import Typography from "@mui/material/Typography/Typography";
 import { useTranslation } from "react-i18next";
 import Button from "@mui/material/Button";
 import { useTheme } from "@mui/material";
+import GameCard from "../GameCard/GameCard";
 
 function RockPaperScissorsGame() {
     const theme = useTheme();
@@ -62,10 +63,6 @@ function RockPaperScissorsGame() {
         }
     }
 
-    const handleOptionChange = (changeEvent: React.SyntheticEvent<HTMLInputElement>) => {
-        setSelectedOption((changeEvent.target as HTMLInputElement).value as Hand | null);
-    };
-
     const handleReset = () => {
         setSelectedOption(null);
         setOpponentChoice(generateOpponentChoice());
@@ -86,20 +83,22 @@ function RockPaperScissorsGame() {
                 <div className="rockpaperscissorsgame__title_flourish">🏆</div>
             </div>
             <div id="message" className="rockpaperscissorsgame__message">
-                {gameResult ? null : <>
-                    <Typography
-                        variant="h3"
-                        className="rockpaperscissorsgame__instructions_title"
-                    >
-                        {t("instructions-title")}
-                    </Typography>
-                    <Typography
-                        variant="body1"
-                        className="rockpaperscissorsgame__instructions"
-                    >
-                        {t("instructions")}
-                    </Typography>
-                </>}
+                {gameResult ? null : (
+                    <>
+                        <Typography
+                            variant="h3"
+                            className="rockpaperscissorsgame__instructions_title"
+                        >
+                            {t("instructions-title")}
+                        </Typography>
+                        <Typography
+                            variant="body1"
+                            className="rockpaperscissorsgame__instructions"
+                        >
+                            {t("instructions")}
+                        </Typography>
+                    </>
+                )}
                 {gameResult ? (
                     <div className="rockpaperscissorsgame__game_results">
                         {gameResult === GameResult.Win ? (
@@ -129,39 +128,24 @@ function RockPaperScissorsGame() {
                     </div>
                 ) : null}
             </div>
-            <form className="rockpaperscissorsgame__selection">
-                <legend>
-                    <label>
-                        <input
-                            type="radio"
-                            name="rock"
-                            value={Hand.Rock}
-                            checked={selectedOption === Hand.Rock}
-                            onChange={handleOptionChange}
-                        />
-                        {Hand.Rock}
-                    </label>
-                    <label>
-                        <input
-                            type="radio"
-                            name="paper"
-                            value={Hand.Paper}
-                            checked={selectedOption === Hand.Paper}
-                            onChange={handleOptionChange}
-                        />
-                        {Hand.Paper}
-                    </label>
-                    <label>
-                        <input
-                            type="radio"
-                            name="scissors"
-                            value={Hand.Scissors}
-                            checked={selectedOption === Hand.Scissors}
-                            onChange={handleOptionChange}
-                        />
-                        {Hand.Scissors}
-                    </label>
-                </legend>
+            <div className="rockpaperscissorsgame__selection">
+                <div className="rockpaperscissorsgame__game-cards">
+                    <GameCard
+                        face={Hand.Rock}
+                        selected={selectedOption === Hand.Rock}
+                        onClick={() => setSelectedOption(Hand.Rock)}
+                    />
+                    <GameCard
+                        face={Hand.Paper}
+                        selected={selectedOption === Hand.Paper}
+                        onClick={() => setSelectedOption(Hand.Paper)}
+                    />
+                    <GameCard
+                        face={Hand.Scissors}
+                        selected={selectedOption === Hand.Scissors}
+                        onClick={() => setSelectedOption(Hand.Scissors)}
+                    />
+                </div>
                 {gameInPlay ? (
                     <Button
                         size="large"
@@ -182,7 +166,7 @@ function RockPaperScissorsGame() {
                         PLAY
                     </Button>
                 )}
-            </form>
+            </div>
             <div id="streak" className="rockpaperscissorsgame__streak">
                 <h3>🥇 current winning streak: {curentWinningStreakCount}</h3>
                 <h4>👑 best winning streak: {winningStreakCount}</h4>

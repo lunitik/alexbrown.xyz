@@ -170,7 +170,7 @@
         },
         "game" : {
             "title" : "Rock, Paper, Scissors!",
-            "instructions" : "select ✊, ✋ or ✌ and click PLAY!",
+            "instructions" : "select ✊, ✋ or 🤟 and click PLAY!",
             "instructions-title" : "📖 Instructions",
             "opponentChoice" : "Your opponent chose:",
             "gameResult" : "YOU"

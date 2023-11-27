@@ -1,0 +1,39 @@
+@import "../../assets/scss/index.scss";
+
+.gamecard {
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    width: 30vw;
+    height: 30vw;
+    font-size: 120px;
+
+    @include large {
+        width: 250px;
+        height: 250px;
+    }
+
+    &:hover {
+        outline: 2px solid black;
+        outline-offset: 3px;
+    }
+
+    &[data-checked="true"] {
+        background-color: var(--colour-brown);
+    }
+
+    &-colour-mode {        
+        &--dark {
+            border: 1px solid var(--colour-brown);
+            
+            &:hover {
+                outline: 2px solid var(--colour-brown);
+                outline-offset: 3px;
+            }
+        }
+    }
+}
