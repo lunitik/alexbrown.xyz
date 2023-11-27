@@ -170,7 +170,7 @@
         },
         "game" : {
             "title" : "Kamień, papier, nożyczki!",
-            "instructions" : "wybierać ✊, ✋ albo ✌ i click PLAY!",
+            "instructions" : "wybierać ✊, ✋ albo 🤟 i click PLAY!",
             "instructions-title" : "📖 Instrukcje",
             "opponentChoice" : "Twój przeciwnik wybrał:",
             "gameResult" : "TY"

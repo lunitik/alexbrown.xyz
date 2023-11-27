@@ -9,7 +9,7 @@
     margin-top: 3rem;
 
     @include large {
-        height: 80vh;
+        min-height: 80vh;
     }
 
     &__title {
@@ -92,13 +92,18 @@
         align-items: center;
         cursor: pointer;
         transition: all 200ms ease-in;
-        color: transparent;
         width: 30vw;
         height: 30vw;
-
+        font-size: 120px;
+        
         @include large {
             width: 250px;
             height: 250px;
+        }
+        
+        & > input {
+            position: absolute;
+            z-index: -1;
         }
     }
 
@@ -106,49 +111,34 @@
         outline: 2px solid black;
         outline-offset: 3px;
     }
-
-    label:has(input[type="radio"]:checked) {
-        background-color: var(--colour-brown);
-    }
-
-    label:has(input[type="radio"]:focus) {
-        outline: 2px solid black;
-        outline-offset: 3px;
-    }
-
+    
+    @supports selector(:has(*)) {
+        label:has(input[type="radio"]:checked) {
+            background-color: var(--colour-brown);
+        }
+        
+        label:has(input[type="radio"]:focus) {
+            outline: 2px solid black;
+            outline-offset: 3px;
+        }
+    }    
+    
     input[type="radio"] {
         position: absolute;
         width: 1px;
         height: 1px;
     }
 
-    input[type="radio"]:focus {
-        outline: none;
-    }
-
-    input[type="radio"]::after {
-        display: block;
-        z-index: 1;
-        cursor: pointer;
-        font-size: 6rem;
-        transform: translate(-3rem, -4.5rem);
-
-        @include large {
-            font-size: 8rem;
-            transform: translate(-4rem, -6rem);
+    @supports not selector(:has(*)) {
+        input[type="radio"]:checked {
+            width: 100px;
+            height: 100px;
+            z-index: 2;
         }
     }
 
-    input[name="rock"]::after {
-        content: "✊";
-    }
-
-    input[name="paper"]::after {
-        content: "✋";
-    }
-
-    input[name="scissors"]::after {
-        content: "✌";
+    input[type="radio"]:focus {
+        outline: none;
     }
 
     &__sparkles {
