@@ -60,6 +60,10 @@ function NavigationMenu() {
         getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.Game)
     );
 
+    const donutChartsLink = (
+        getPathFromCurrentLanguage(muiUtils.locale.lng, AppRoute.DonutCharts)
+    );
+
     const drawer = (
         <Box className="navigationmenu__drawer" onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
             <Typography variant="h6" sx={{ my: 2 }}>
@@ -75,6 +79,9 @@ function NavigationMenu() {
                 </NavLink>
                 <NavLink to={gameLink}>
                     <Typography variant="body1">{t("game")}</Typography>
+                </NavLink>
+                <NavLink to={donutChartsLink}>
+                    <Typography variant="body1">{t("donut-charts")}</Typography>
                 </NavLink>
             </List>
             <List className="navigationmenu__drawer__list">
@@ -116,6 +123,9 @@ function NavigationMenu() {
                             </NavLink>
                             <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={gameLink}>
                                 <Typography variant="body1">{t("game")}</Typography>
+                            </NavLink>
+                            <NavLink className={`navigationmenu__link navigationmenu__link-colour-mode--${theme.palette.mode} util__underline`} to={donutChartsLink}>
+                                <Typography variant="body1">{t("donut-charts")}</Typography>
                             </NavLink>
                         </MenuItem>
                     </Menu>

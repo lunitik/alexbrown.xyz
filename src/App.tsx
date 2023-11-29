@@ -17,6 +17,7 @@ const Blogs = lazy(() => import( "./pages/Blogs/Blogs"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound/PageNotFound"));
 const Home = lazy(() => import("./pages/Home/Home"));
 const Contact = lazy(() => import("./pages/Contact/Contact"));
+const DonutCharts = lazy(() => import("./pages/DonutCharts/DonutCharts"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,18 +28,21 @@ const router = createBrowserRouter(
       <Route path="blogs" element={<Blogs />} />
       <Route path="blogs/:title" element={<Blog />} />
       <Route path="rock-paper-scissors" element={<RockPaperScissors />} />
+      <Route path="donut-charts" element={<DonutCharts />} />
       {/* 'en-US' routes */}
       <Route path="/en-us/" element={<Home />} />
       <Route path="/en-us/contact" element={<Contact />} />
       <Route path="/en-us/blogs" element={<Blogs />} />
       <Route path="/en-us/blogs/:title" element={<Blog />} />
       <Route path="/en-us/rock-paper-scissors" element={<RockPaperScissors />} />
+      <Route path="/en-us/donut-charts" element={<DonutCharts />} />
       {/* 'pl-pl' routes */}
       <Route path="/pl-pl/" element={<Home />} />
       <Route path="/pl-pl/kontakt" element={<Contact />} />
       <Route path="/pl-pl/blogi" element={<Blogs />} />
       <Route path="/pl-pl/blogi/:title" element={<Blog />} />
       <Route path="/pl-pl/rock-paper-scissors" element={<RockPaperScissors />} />
+      <Route path="/pl-pl/wykresy-paczkowe" element={<DonutCharts />} />
     </Route>
   )
 );

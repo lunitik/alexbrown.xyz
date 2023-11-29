@@ -72,6 +72,14 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/rock-paper-scissors",
             "keywords": ["game", "rock, paper, scissors"]
+        },
+        "donut-charts" : {
+            "title": "Wykresy pączkowe | alexbrown.xyz",
+            "description": "Wygeneruj ładne wykresy pierścieniowe",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/donut-charts",
+            "keywords": ["pączkowe", "wykresy pączkowe"]
         }
     },
     "components" : {
@@ -116,7 +124,8 @@
             "blogs" : "Blogi",
             "utilities" : "Narzędzia",
             "menu" : "Badać",
-            "game" : "Rock, Paper, Scissors!"
+            "game" : "Rock, Paper, Scissors!",
+            "donut-charts" : "Wykresy Pączkowe"
         },
         "experience" : {
             "experience__heading--skills" : "umiejętności",
@@ -137,6 +146,10 @@
             "blogs" : {
                 "herobanner__heading" : "Dowiedz się więcej z tych artykułów",
                 "herobanner__sub-heading" : "przeszukaj serię artykułów, w których omawiam różne aspekty tworzenia tej witryny"
+            },
+            "donut-charts" : {
+                "herobanner__heading" : "Wykresy Pączków",
+                "herobanner__sub-heading" : "wygeneruj ładne wykresy pierścieniowe"
             }
         },
         "languageselector" : {
