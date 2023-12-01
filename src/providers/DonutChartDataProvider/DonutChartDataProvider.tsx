@@ -23,7 +23,7 @@ export const DonutChartDataProvider = ({children} : Props) => {
     }, []);
 
     return (
-        <DonutChartContext.Provider value={donutCharts}>
+        <DonutChartContext.Provider value={[donutCharts, setDonutCharts]}>
             {children}
         </DonutChartContext.Provider>
     );

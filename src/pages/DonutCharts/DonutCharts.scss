@@ -1,9 +1,6 @@
 .donut-charts {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 600px;
-    padding: 3rem;
+    flex-direction: column;
     
     &-colour-mode {
         background-color: var(--colour-white);
@@ -11,5 +8,13 @@
         &--dark {
             background-color: var(--colour-black);
         }
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+        padding: 3rem;
     }
 }
