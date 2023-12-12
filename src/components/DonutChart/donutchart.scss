@@ -31,6 +31,16 @@ $donut-slices: (
 }
 }
 
+.delete-option {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &.hidden {
+    display: none;
+  }
+}
+
 .donut__label {
   left: 50%;
   line-height: 1.5;
