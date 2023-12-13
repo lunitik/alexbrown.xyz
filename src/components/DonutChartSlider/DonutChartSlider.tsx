@@ -14,7 +14,7 @@ type DonutChartSliderProps = {
 function DonutChartSlider(props: DonutChartSliderProps) {
     const { title, value, setValue } = props;
 
-    const handleSliderChange = (event: Event, newValue: number | number[]) => {
+    const handleSliderChange = (_event: Event, newValue: number | number[]) => {
         setValue(newValue as number);
     };
 

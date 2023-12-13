@@ -27,7 +27,7 @@ function DonutChartRenderer() {
         setDonutCharts(donutCharts.filter((chart) => !marked.has(chart.guid)));
     };
 
-    const handleChecked = (event) => {
+    const handleChecked = (event: React.ChangeEvent<HTMLInputElement>) => {
         if (marked.has(event.target.value)) {
             setMarked(
                 (prev) =>

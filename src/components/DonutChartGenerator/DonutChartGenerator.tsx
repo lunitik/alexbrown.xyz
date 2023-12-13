@@ -26,7 +26,7 @@ function DonutChartGenerator() {
     const [enableSpacing, setEnableSpacing] = useState(false);
     const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
     const [heading, setHeading] = useState("Demo");
-    const [subHeading, setSubHeading] = useState(null);
+    const [subHeading, setSubHeading] = useState<null | string>(null);
     const [first, setFirst] = useState(40);
     const [second, setSecond] = useState(33);
     const [third, setThird] = useState(12);
@@ -53,11 +53,11 @@ function DonutChartGenerator() {
         return input / 100;
     };
 
-    const handleHeading = (event) => {
+    const handleHeading = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         setHeading(event.target.value);
     };
 
-    const handleSubHeading = (event) => {
+    const handleSubHeading = (event: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
         setSubHeading(event.target.value);
     };
 
