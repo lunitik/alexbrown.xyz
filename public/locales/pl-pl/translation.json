@@ -2,7 +2,7 @@
     "pages" : {
         "home" : {
             "title": "Tworzenie stron internetowych — projekt osobisty | alexbrown.xyz",
-            "description": "osobista witryna projektu autorstwa programisty Alexa Browna. Alex, mieszkający w Polsce i mieszkający w Wielkiej Brytanii programista stron internetowych, pracuje w branży tworzenia stron internetowych i handlu elektronicznego od prawie dwudziestu lat.",
+            "description": "osobista witryna projektu autorstwa programisty Alex Brown. Alex, mieszkający w Polsce i mieszkający w Wielkiej Brytanii programista stron internetowych, pracuje w branży tworzenia stron internetowych i handlu elektronicznego od prawie dwudziestu lat.",
             "type": "",
             "name": "Alex Brown",
             "keywords": ["alex", "alexbrown", "projekt", "AWS", "starszy programista stron internetowych"],
@@ -89,8 +89,8 @@
         },
         "about" : {
             "about__heading" : "O mnie",
-            "about__personalstatement__heading" : "Oświadczenie osobiste",
-            "about__personalstatement__text" : "Starszy Web Manager/Programista z ponad 18-letnim doświadczeniem zawodowym w tworzeniu, rozwoju i zarządzaniu stronami internetowymi. Dogłębna wiedza na temat projektowania i tworzenia stron internetowych, a także szeroka wiedza na temat tworzenia oprogramowania i aplikacji, połączona z kreatywnym zestawem umiejętności projektowych, analitycznych i marketingowych. Ciężko pracujący, zmotywowany i pełen pasji technolog, charakteryzujący się wzorową frekwencją i terminowością."
+            "about__personalstatement__heading" : "Doświadczenie",
+            "about__personalstatement__text" : "Starszy Web Manager/Programista z ponad 18-letnim doświadczeniem zawodowym w tworzeniu, rozwoju i zarządzaniu stronami internetowymi. Doświadczenie w projektowaniu i tworzeniu stron internetowych, a także szeroka wiedza na temat tworzenia oprogramowania i aplikacji, połączona z kreatywnym zestawem umiejętności projektowych, analitycznych i marketingowych. Ciężko pracujący, zmotywowany i pełen pasji technolog, charakteryzujący się wzorową frekwencją i terminowością."
         },
         "contact-form" : {
             "contact__heading" : "Wypełnij poniższy formularz",
@@ -103,14 +103,14 @@
             "message" : "Wiadomość",
             "message_placeholder": "Wpisz coś tutaj...",
             "error_message" : "Wiadomość jest wymagana.",
-            "submit" : "Składać",
+            "submit" : "Wyślij",
             "required_fields" : "są polami wymaganymi",
             "post_success": "Dziękuję za kontakt. Twoja wiadomość powinna już zostać dostarczona. Wkrótce się z Tobą skontaktuję.",
             "post_failure" : "Ups! Wystąpił błąd i Twoja wiadomość nie mogła zostać wysłana."
         },
         "darkmodeselector" : {
             "dark mode" : "tryb ciemny",
-            "light mode" : "tryb świetlny"
+            "light mode" : "tryb jasny"
         },
         "education" : {
             "education__heading" : "Edukacja",
@@ -123,24 +123,24 @@
             "contact" : "Kontakt",
             "blogs" : "Blogi",
             "utilities" : "Narzędzia",
-            "menu" : "Badać",
+            "menu" : "Więcej",
             "game" : "Rock, Paper, Scissors!",
             "donut-charts" : "Wykresy Pączkowe"
         },
         "experience" : {
             "experience__heading--skills" : "umiejętności",
-            "primary" : "podstawowy",
-            "auxiliary" : "pomocniczy",
+            "primary" : "Główne",
+            "auxiliary" : "Dodatkowe",
             "experience__heading--programming" : "programowanie",
             "experience__heading--software" : "oprogramowanie"
         },
         "herobanner" : {
             "home" : {
                 "herobanner__heading" : "Cześć! Jestem Alex",
-                "herobanner__sub-heading" : "Witam w moim osobistym projekcie. Rozejrzyj się."
+                "herobanner__sub-heading" : "Witaj na mojej stronie. Rozejrzyj się."
             },
             "contact" : {
-                "herobanner__heading" : "Bardzo chciałbym to usłyszeć od ciebie!",
+                "herobanner__heading" : "Bardzo chciałbym to od Ciebie usłyszeć!",
                 "herobanner__sub-heading" : "Myślisz o zatrudnieniu mnie lub po prostu chcesz zadać pytanie?"
             },
             "blogs" : {
@@ -161,8 +161,8 @@
             "building computers" : "budowanie komputerów",
             "web design" : "projektowanie stron",
             "development" : "rozwój",
-            "gaming" : "hazard",
-            "learning" : "uczenie się",
+            "gaming" : "gry",
+            "learning" : "nauka",
             "cooking" : "gotowanie",
             "parenting" : "rodzicielstwo",
             "photography" : "fotografia",
@@ -178,8 +178,8 @@
             "heading" : "Blogi"
         },
         "search" : {
-            "search_input_label" : "Odkryć...",
-            "clear" : "jasne wyniki"
+            "search_input_label" : "Odkrywaj...",
+            "clear" : "Wyczyść wyniki"
         },
         "game" : {
             "title" : "Kamień, papier, nożyczki!",
