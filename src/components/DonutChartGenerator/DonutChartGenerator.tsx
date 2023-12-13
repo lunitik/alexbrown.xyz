@@ -16,10 +16,12 @@ import {
 import "./DonutChartGenerator.scss";
 import DonutChartSlider from "../DonutChartSlider/DonutChartSlider";
 import { v4 as uuidv4 } from "uuid";
+import { useTranslation } from "react-i18next";
 
 function DonutChartGenerator() {
     const [donutCharts, setDonutCharts] = useDonutCharts();
     const theme = useTheme();
+    const { t } = useTranslation("translation", { keyPrefix: "components.donutchartgenerator"});
     const [open, setOpen] = useState(false);
     const [enableSpacing, setEnableSpacing] = useState(false);
     const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
@@ -60,61 +62,63 @@ function DonutChartGenerator() {
     };
 
     const isChartValid = () => {
-      return first + second + third + forth + fifth <= 100 ? true : false;
-    }
+        return first + second + third + forth + fifth <= 100 ? true : false;
+    };
 
     const handleAddChart = () => {
-      if (isChartValid()) {
-        setDonutCharts([
-            {
-                guid: uuidv4(),
-                style: {
-                    "--first": convertInputToStyle(first),
-                    "--second": convertInputToStyle(second),
-                    "--third": convertInputToStyle(third),
-                    "--fourth": convertInputToStyle(forth),
-                    "--fifth": convertInputToStyle(fifth),
-                    "--donut-spacing": enableSpacing ? 2 : 0,
-                } as React.CSSProperties,
-                heading: heading,
-                sub: subHeading ? subHeading : (null as unknown as undefined)
-            },
-            ...donutCharts,
-        ]);
-        setOpen(false);
-      } else {
-        alert("section totals cannot exceed 100%");
-      }
+        if (isChartValid()) {
+            setDonutCharts([
+                {
+                    guid: uuidv4(),
+                    style: {
+                        "--first": convertInputToStyle(first),
+                        "--second": convertInputToStyle(second),
+                        "--third": convertInputToStyle(third),
+                        "--fourth": convertInputToStyle(forth),
+                        "--fifth": convertInputToStyle(fifth),
+                        "--donut-spacing": enableSpacing ? 2 : 0,
+                    } as React.CSSProperties,
+                    heading: heading,
+                    sub: subHeading
+                        ? subHeading
+                        : (null as unknown as undefined),
+                },
+                ...donutCharts,
+            ]);
+            setOpen(false);
+        } else {
+            alert(t("totals-exceeded"));
+        }
     };
 
     return (
         <div className="donut-charts-generator">
             <Button variant="contained" onClick={handleClickOpen}>
-                Add chart
+                {t("button-add-text")}
             </Button>
             <Dialog open={open} onClose={handleClose} fullScreen={fullScreen}>
-                <DialogTitle>Create chart</DialogTitle>
+                <DialogTitle>{t("dialog-title")}</DialogTitle>
                 <DialogContent>
                     <DialogContentText className="dialog__content__text">
-                        Use the settings below to configure a stylised chart.
+                        {t("dialog-content-text")}
                     </DialogContentText>
-                      <TextField
-                          required
-                          fullWidth
-                          margin="normal"
-                          id="donut-chart-heading"
-                          label="Heading"
-                          defaultValue={heading}
-                          onChange={handleHeading}
-                      />
-                      <TextField
-                      fullWidth
-                          id="donut-chart-sub"
-                          margin="normal"
-                          label="Optional Sub Heading"
-                          defaultValue={subHeading}
-                          onChange={handleSubHeading}
-                      />
+                    <TextField
+                        required
+                        fullWidth
+                        margin="normal"
+                        id="donut-chart-heading"
+                        label={t("heading")}
+                        defaultValue={heading}
+                        onChange={handleHeading}
+                    />
+                    <TextField
+                        fullWidth
+                        id="donut-chart-sub"
+                        margin="normal"
+                        label={t("sub-heading")}
+                        defaultValue={subHeading}
+                        onChange={handleSubHeading}
+                    />
                     <DonutChartSlider
                         title="first"
                         value={first}
@@ -145,15 +149,15 @@ function DonutChartGenerator() {
                             <Checkbox
                                 checked={enableSpacing}
                                 onChange={handleCheckboxChange}
-                                inputProps={{ "aria-label": "enable spacing" }}
+                                inputProps={{ "aria-label": t("enable-spacing") }}
                             />
                         }
-                        label="Enable spacing"
+                        label={t("enable-spacing")}
                     />
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleCancel}>Cancel</Button>
-                    <Button onClick={handleAddChart}>Add</Button>
+                    <Button onClick={handleCancel}>{t("cancel")}</Button>
+                    <Button onClick={handleAddChart}>{t("add")}</Button>
                 </DialogActions>
             </Dialog>
         </div>

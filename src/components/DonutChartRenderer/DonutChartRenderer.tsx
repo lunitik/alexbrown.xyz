@@ -1,7 +1,8 @@
-import { lazy, useEffect, useState } from "react";
+import { lazy, useState } from "react";
 import { Button, Checkbox, useTheme } from "@mui/material";
 import { useDonutCharts } from "../../providers/DonutChartDataProvider/useDonutCharts";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import { useTranslation } from "react-i18next";
 const DonutChart = lazy(() => import("../DonutChart/DonutChart"));
 const DonutChartGenerator = lazy(
     () => import("../DonutChartGenerator/DonutChartGenerator")
@@ -9,14 +10,15 @@ const DonutChartGenerator = lazy(
 
 function DonutChartRenderer() {
     const theme = useTheme();
+    const { t } = useTranslation("translation", { keyPrefix: "components.donutchartrenderer"});
     const donutChartsColourModeClass = `donut-charts donut-charts-colour-mode--${theme.palette.mode}`;
-    const [showDeleteOption, setShowDeleteOptions] = useState(true);
+    const [showDeleteOption, setShowDeleteOptions] = useState(false);
     const [donutCharts, setDonutCharts] = useDonutCharts();
     const [marked, setMarked] = useState<Set<string>>(new Set());
 
     const handleClickShowDeleteOption = () => {
-        if (showDeleteOption && confirm("Are you sure?")) {            
-            removeDeleted();                
+        if (showDeleteOption && confirm(t("confirmation-dialog"))) {
+            removeDeleted();
         }
         setShowDeleteOptions(() => !showDeleteOption);
     };
@@ -53,8 +55,8 @@ function DonutChartRenderer() {
                         onClick={handleClickShowDeleteOption}
                     >
                         {showDeleteOption
-                            ? "Confirm deletion"
-                            : "Delete charts"}
+                            ? t("confirm-deletion")
+                            : t("delete-charts")}
                     </Button>
                 ) : null}
             </Grid2>

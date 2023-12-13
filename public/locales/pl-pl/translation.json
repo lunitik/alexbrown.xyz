@@ -187,6 +187,22 @@
             "instructions-title" : "📖 Instrukcje",
             "opponentChoice" : "Twój przeciwnik wybrał:",
             "gameResult" : "TY"
+        },
+        "donutchartgenerator" : {
+            "totals-exceeded" : "suma sekcji nie może przekraczać 100%",
+            "button-add-text" : "Dodaj wykres",
+            "dialog-title" : "Utwórz wykres",
+            "dialog-content-text" : "Użyj poniższych ustawień, aby skonfigurować stylizowany wykres.",
+            "heading" : "Nagłówek",
+            "sub-heading": "Opcjonalny podtytuł",
+            "enable-spacing" : "Włącz odstępy",
+            "cancel" : "Anulować",
+            "add" : "Dodać"
+        },
+        "donutchartrenderer" : {
+            "confirm-deletion" : "Potwierdź usunięcie",
+            "delete-charts" : "Usuń wykresy",
+            "confirmation-dialog" : "Jesteś pewny?"
         }
     }    
 }

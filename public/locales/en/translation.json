@@ -187,6 +187,22 @@
             "instructions-title" : "📖 Instructions",
             "opponentChoice" : "Your opponent chose:",
             "gameResult" : "YOU"
+        },
+        "donutchartgenerator" : {
+            "totals-exceeded" : "section totals cannot exceed 100%",
+            "button-add-text" : "Add chart",
+            "dialog-title" : "Create chart",
+            "dialog-content-text" : "Use the settings below to configure a stylised chart.",
+            "heading" : "Heading",
+            "sub-heading": "Optional Sub Heading",
+            "enable-spacing" : "Enable spacing",
+            "cancel" : "Cancel",
+            "add" : "Add"
+        },
+        "donutchartrenderer" : {
+            "confirm-deletion" : "Confirm deletion",
+            "delete-charts" : "Delete charts",
+            "confirmation-dialog" : "Are you sure?"
         }
     }    
 }

@@ -1,4 +1,4 @@
-import { Checkbox, useTheme } from "@mui/material";
+import { useTheme } from "@mui/material";
 import "./donutchart.scss";
 
 export type DonutChartProps = {
