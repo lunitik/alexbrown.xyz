@@ -72,6 +72,14 @@
             "name": "Alex Brown",
             "canonical": "https://www.alexbrown.xyz/rock-paper-scissors",
             "keywords": ["game", "rock, paper, scissors"]
+        },
+        "donut-charts" : {
+            "title": "Donut Charts | alexbrown.xyz",
+            "description": "Generate pretty donut charts",
+            "type": "",
+            "name": "Alex Brown",
+            "canonical": "https://www.alexbrown.xyz/donut-charts",
+            "keywords": ["charts", "donut charts"]
         }
     },
     "components" : {
@@ -116,7 +124,8 @@
             "blogs" : "Blogs",
             "utilities" : "Utilities",
             "menu" : "Explore",
-            "game" : "Rock, Paper, Scissors!"
+            "game" : "Rock, Paper, Scissors!",
+            "donut-charts" : "Donut Charts"
         },
         "experience" : {
             "experience__heading--skills" : "skills",
@@ -137,6 +146,10 @@
             "blogs" : {
                 "herobanner__heading" : "Learn more through these articles",
                 "herobanner__sub-heading" : "search through a series of articles where I discuss various aspects of building this site"
+            },
+            "donut-charts" : {
+                "herobanner__heading" : "Donut Charts",
+                "herobanner__sub-heading" : "create pretty donut charts"
             }
         },
         "languageselector" : {
@@ -174,6 +187,22 @@
             "instructions-title" : "📖 Instructions",
             "opponentChoice" : "Your opponent chose:",
             "gameResult" : "YOU"
+        },
+        "donutchartgenerator" : {
+            "totals-exceeded" : "section totals cannot exceed 100%",
+            "button-add-text" : "Add chart",
+            "dialog-title" : "Create chart",
+            "dialog-content-text" : "Use the settings below to configure a stylised chart.",
+            "heading" : "Heading",
+            "sub-heading": "Optional Sub Heading",
+            "enable-spacing" : "Enable spacing",
+            "cancel" : "Cancel",
+            "add" : "Add"
+        },
+        "donutchartrenderer" : {
+            "confirm-deletion" : "Confirm deletion",
+            "delete-charts" : "Delete charts",
+            "confirmation-dialog" : "Are you sure?"
         }
     }    
 }

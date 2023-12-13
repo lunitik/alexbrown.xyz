@@ -88,6 +88,14 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/rock-paper-scissors",
                         xdefault: true,
                     }
+                },
+                {
+                    name: "donut-charts",
+                    path: "/donut-charts",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/donut-charts",
+                        xdefault: true,
+                    }
                 }
             ],
         },
@@ -160,6 +168,14 @@ export const languages: Array<Language> = [
                         canonical: "https://www.alexbrown.xyz/en-us/rock-paper-scissors",
                         xdefault: false,
                     }
+                },
+                {
+                    name: "donut-charts",
+                    path: "/en-us/donut-charts",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/en-us/donut-charts",
+                        xdefault: false,
+                    }
                 }
             ],
         },
@@ -230,6 +246,14 @@ export const languages: Array<Language> = [
                     path: "/pl-pl/rock-paper-scissors",
                     metadata: {
                         canonical: "https://www.alexbrown.xyz/pl-pl/rock-paper-scissors",
+                        xdefault: false,
+                    }
+                },
+                {
+                    name: "donutcharts",
+                    path: "/pl-pl/wykresy-paczkow",
+                    metadata: {
+                        canonical: "https://www.alexbrown.xyz/pl-pl/wykresy-paczkow",
                         xdefault: false,
                     }
                 }

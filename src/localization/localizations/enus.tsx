@@ -8,5 +8,6 @@ export const enUS: LanguageStrings = {
     'routes.blog.darkmode' : '/blogs/dark-mode',
     'routes.blog.languageselection' : '/blogs/language-selection',
     'routes.blog.dynamicstate' : '/blogs/dynamically-initialised-state',
-    'routes.game' : '/rock-paper-scissors'
+    'routes.game' : '/rock-paper-scissors',
+    'routes.donutcharts' : '/donut-charts'
 }

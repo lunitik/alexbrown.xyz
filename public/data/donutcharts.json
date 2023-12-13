@@ -1,0 +1,38 @@
+[
+    {
+        "guid" : "6122f3b8-9c9f-4f1c-b36f-e96e0c87300b",
+        "style": {
+            "--first": 0.4,
+            "--second": 0.33,
+            "--third": 0.12,
+            "--fourth": 0.08,
+            "--fifth": 0.07
+        },
+        "heading": "Donut Chart",
+        "sub": "with pure CSS"
+    },
+    {
+        "guid" : "c1d4f9c2-0863-4d61-b870-f8c7504c82b8",
+        "style": {
+            "--first": 0.22,
+            "--second": 0.2,
+            "--third": 0.2,
+            "--fourth": 0.2,
+            "--fifth": 0.18
+        },
+        "heading": "Donut Chart"
+    },
+    {
+        "guid" : "a01d987f-1c9f-4fff-8c02-56be59fea725",
+        "style": {
+            "--first": 0.7,
+            "--second": 0.16,
+            "--third": 0.1,
+            "--fourth": 0.02,
+            "--fifth": 0.02,
+            "--donut-spacing": 2
+        },
+        "heading": "Donut Chart",
+        "sub": "with pure CSS"
+    }
+]

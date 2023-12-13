@@ -1,0 +1,9 @@
+- App.tsx | Add a route for each language connecting the page url to the page component (lazyily importing the component)
+- /localizations/AppLanguages.tsx | Add route to AppRoute enum
+- /localizations/localizations/base-strings.tsx | Add url to baseStrings object
+- add url to all other language localizations
+- /src/components/NavigationMenu/NavigationMenu.tsx | Add links to nav menu
+- /public/locales | Add navigation translations
+- Add Page Component
+- Add Page translations
+- /src/assets/data/languages.tsx | add SEO details if using the SEO component in the newly created page

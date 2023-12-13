@@ -25,7 +25,7 @@ import { AppLanguage } from "./AppLanguages";
 
   const polish: MUILocaleData = {
     muiCore: materialLocalePolish,
-    title: "Polska",
+    title: "Polski",
     lng: AppLanguage.Polish
   };
 

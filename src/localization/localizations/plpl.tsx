@@ -8,5 +8,6 @@ export const plPL: LanguageStrings = {
     'routes.blog.darkmode' : '/blogi/tryb-ciemny',
     'routes.blog.languageselection' : '/blogi/wybor-jezyka',
     'routes.blog.dynamicstate' : '/blogi/stan-zainicjowany-dynamicznie',
-    'routes.game' : '/rock-paper-scissors'
+    'routes.game' : '/rock-paper-scissors',
+    'routes.donutcharts' : '/wykresy-paczkowe'
 }
